@@ -1,0 +1,89 @@
+body {
+  display: flex;
+}
+
+#boil{
+  justify-content: flex-start;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#chart{
+  border-style: solid;
+  border-color: black;
+}
+
+#electrons{
+  justify-content: flex-start;
+  position: absolute;
+  top: 42%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#sheet {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#image {
+  width: auto;
+  height: 20vw;
+}
+
+#mass {
+  justify-content: flex-start;
+  position: absolute;
+  top: 21%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#melt {
+  justify-content: flex-start;
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#name {
+  justify-content: flex-start;
+  position: absolute;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#number {
+  justify-content: flex-start;
+  position: absolute;
+  top: 7%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#protons {
+  justify-content: flex-start;
+  position: absolute;
+  top: 49%;
+  left: 2%;
+  font-weight: bolder;
+}
+
+#stuff {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  padding-bottom: 50;
+}
+
+#symbol {
+  justify-content: flex-start;
+  position: absolute;
+  top: 14%;
+  left: 2%;
+  font-weight: bolder;
+}
