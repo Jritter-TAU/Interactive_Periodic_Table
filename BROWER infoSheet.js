@@ -105,23 +105,18 @@ Mendelevium,101,Md,257.10,N/A,N/A,,,,
 Nobelium,102,No,255.09,N/A,N/A,,,,
 Lawrencium,103,Lr,256.10,N/A,N/A,,,,
 `
+
+const canvas = document.getElementById('table');
+const ctx = canvas.getContext('2d');
 const boil = document.getElementById('boil');
-const electrons = document.getElementById('electrons')
+const electrons = document.getElementById('electrons');
 const mass = document.getElementById('mass');
 const melt = document.getElementById('melt');
 const Name = document.getElementById('name');
 const number = document.getElementById('number');
 const protons = document.getElementById('protons');
 const symbol = document.getElementById('symbol');
-const Hydrogen = document.getElementById('H');
-const Helium = document.getElementById('He');
-const Lithium = document.getElementById('Li');
-const Beryllium = document.getElementById('Be');
-const Boron = document.getElementById('B');
-const Carbon = document.getElementById('C');
-const Nitrogen = document.getElementById('N');
-const Oxygen = document.getElementById('O');
-const Fluorine = document.getElementById('F');
+const Hydrogen = document.getElementById('Hydrogen');
 
 const vals = elementsText.split(",");
 const elementsObj = {};
@@ -159,18 +154,1426 @@ function displayInfo(z) {
     protons.textContent = protons.innerText + ' ' + z.protons;
 }
 
+//row 1
+
+const H = {
+    x: 10,
+    y: 10,
+    w: 40,
+    h: 40,
+    mass: 1.0078,
+    num: 1,
+    type: 'reactive nonmetal',
+    color: "blue"
+}
+const He = {
+    x: 775,
+    y: 10,
+    w: 40,
+    h: 40,
+    mass: 4.0026,
+    num: 2,
+    type: 'nobel gas',
+    color: "pink"
+}
+
+//row 2
+
+const Li = {
+    x: 10,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 6.9410,
+    num: 3,
+    type: 'alkali metal',
+    color: "aqua"
+
+}
+const Be = {
+    x: 55,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 9.0122,
+    num: 4,
+    type: 'alkaline earth metal',
+    color: "red"
+
+}
+const B = {
+    x: 550,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 10.811,
+    num: 5,
+    type: 'metalloid',
+    color: "yellow"
+
+}
+const C = {
+    x: 595,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 12.0107,
+    num: 6,
+    type: 'reactive nonmetal',
+    color: "blue"
+
+}
+const N = {
+    x: 640,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 14.0067,
+    num: 7,
+    type: 'reactive nonmetal',
+    color: "blue"
+
+}
+const O = {
+    x: 685,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 15.9994,
+    num: 8,
+    type: 'reactive nonmetal',
+    color: "blue"
+
+}
+const F = {
+    x: 730,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 18.9984,
+    num: 9,
+    type: 'reactive nonmetal',
+    color: "blue"
+
+}
+const Ne = {
+    x: 775,
+    y: 55,
+    w: 40,
+    h: 40,
+    mass: 20.1797,
+    num: 10,
+    type: 'nobel gas',
+    color: 'pink'
+
+}
+
+//row 3
+
+const Na = {
+    x: 10,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 22.9897,
+    num: 11,
+    type: 'alkali metal',
+    color: 'aqua'
+
+}
+const Mg = {
+    x: 55,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 24.3050,
+    num: 12,
+    type: 'alkaline earth metal',
+    color: 'red'
+
+}
+const Al = {
+    x: 550,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 26.9815,
+    num: 13,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Si = {
+    x: 595,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 28.0855,
+    num: 14,
+    type: 'metaloid',
+    color: 'yellow'
+
+}
+const P = {
+    x: 640,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 30.9738,
+    num: 15,
+    type: 'reactive nonmetal',
+    color: 'blue'
+
+}
+const S = {
+    x: 685,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 32.065,
+    num: 16,
+    type: 'reactive nonmetal',
+    color: 'blue'
+
+}
+const Cl = {
+    x: 730,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 35.453,
+    num: 17,
+    type: 'reactive nonmetal',
+    color:'blue'
+
+}
+const Ar = {
+    x: 775,
+    y: 100,
+    w: 40,
+    h: 40,
+    mass: 39.948,
+    num: 18,
+    type: 'nobel gas',
+    color: 'pink'
+
+}
+
+//row 4
+
+const K = {
+    x: 10,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 39.0983,
+    num: 19,
+    type: 'alkali metal',
+    color: 'aqua'
+
+}
+const Ca = {
+    x: 55,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 40.078,
+    num: 20,
+    type: 'alkaline earth metal',
+    color: 'red'
+
+}
+const Sc = {
+    x: 100,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 44.9559,
+    num: 21,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ti = {
+    x: 145,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 47.867,
+    num: 22,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const V = {
+    x: 190,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 50.9415,
+    num: 23,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Cr = {
+    x: 235,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 51.9961,
+    num: 24,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Mn = {
+    x: 280,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 54.938,
+    num: 25,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Fe = {
+    x: 325,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 55.845,
+    num: 26,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Co = {
+    x: 370,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 58.9332,
+    num: 27,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ni = {
+    x: 415,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 58.6934,
+    num: 28,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Cu = {
+    x: 460,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 63.546,
+    num: 29,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Zn = {
+    x: 505,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 65.380,
+    num: 30,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ga = {
+    x: 550,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 69.723,
+    num: 31,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Ge = {
+    x: 595,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 72.630,
+    num: 32,
+    type: 'metaloid',
+    color: 'yellow'
+
+}
+const As = {
+    x: 640,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 74.992,
+    num: 33,
+    type: 'metaloid',
+    color: 'yellow'
+
+}
+const Se = {
+    x: 685,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 78.963,
+    num: 34,
+    type: 'reactive nonmetal',
+    color: 'blue'
+
+}
+const Br = {
+    x: 730,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 79.904,
+    num: 35,
+    type: 'reactive nonmetal',
+    color: 'blue'
+
+}
+const Kr = {
+    x: 775,
+    y: 145,
+    w: 40,
+    h: 40,
+    mass: 83.798,
+    num: 36,
+    type: 'nobel gas',
+    color: 'pink'
+}
+
+//row 5
+
+const Rb = {
+    x: 10,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 85.4678,
+    num: 37,
+    type: 'alkali metal',
+    color: 'aqua'
+
+}
+const Sr = {
+    x: 55,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 87.62,
+    num: 38,
+    type: 'alkaline earth metal',
+    color: 'red'
+
+}
+const Y = {
+    x: 100,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 88.9059,
+    num: 39,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Zr = {
+    x: 145,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 91.224,
+    num: 40,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Nb = {
+    x: 190,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 92.9064,
+    num: 41,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Mo = {
+    x: 235,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 95.95,
+    num: 42,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Tc = {
+    x: 280,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 98.906,
+    num: 43,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ru = {
+    x: 325,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 101.07,
+    num: 44,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Rh = {
+    x: 370,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 102.9055,
+    num: 45,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Pd = {
+    x: 415,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 106.42,
+    num: 46,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ag = {
+    x: 460,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 107.8682,
+    num: 47,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Cd = {
+    x: 505,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 112.414,
+    num: 48,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const In = {
+    x: 550,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 114.818,
+    num: 49,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Sn = {
+    x: 595,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 118.710,
+    num: 50,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Sb = {
+    x: 640,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 121.760,
+    num: 51,
+    type: 'metaloid',
+    color: 'yellow'
+
+}
+const Te = {
+    x: 685,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 127.60,
+    num: 52,
+    type: 'metaloid',
+    color: 'yellow'
+
+}
+const I = {
+    x: 730,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 126.9045,
+    num: 53,
+    type: 'reactive nonmetal',
+    color: 'blue'
+
+}
+const Xe = {
+    x: 775,
+    y: 190,
+    w: 40,
+    h: 40,
+    mass: 131.293,
+    num: 54,
+    type: 'nobel gas',
+    color: 'pink'
+}
+
+//row 6
+
+const Cs = {
+    x: 10,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 132.9055,
+    num: 55,
+    type: 'alkali metal',
+    color: 'aqua'
+
+}
+const Ba = {
+    x: 55,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 137.327,
+    num: 56,
+    type: 'alkaline earth metal',
+    color: 'red'
+
+}
+const La = {
+    x: 100,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 138.9055,
+    num: 57,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Hf = {
+    x: 145,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 178.49,
+    num: 72,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ta = {
+    x: 190,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 180.9479,
+    num: 73,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const W = {
+    x: 235,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 183.84,
+    num: 74,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Re = {
+    x: 280,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 186.207,
+    num: 75,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Os = {
+    x: 325,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 190.23,
+    num: 76,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Ir = {
+    x: 370,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 192.217,
+    num: 77,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Pt = {
+    x: 415,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 195.084,
+    num: 78,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Au = {
+    x: 460,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 196.9665,
+    num: 79,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Hg = {
+    x: 505,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 200.59,
+    num: 80,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Tl = {
+    x: 550,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 204.383,
+    num: 81,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Pb = {
+    x: 595,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 207.2,
+    num: 82,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Bi = {
+    x: 640,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 208.9804,
+    num: 83,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Po = {
+    x: 685,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 209.9871,
+    num: 84,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const At = {
+    x: 730,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 209.9871,
+    num: 85,
+    type: 'post-transition metal',
+    color: 'green'
+
+}
+const Rn = {
+    x: 775,
+    y: 235,
+    w: 40,
+    h: 40,
+    mass: 222.018,
+    num: 86,
+    type: 'nobel gas',
+    color: 'pink'
+}
+
+//row 7
+
+const Fr = {
+    x: 10,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 223.0197,
+    num: 87,
+    type: 'alkali metal',
+    color: 'aqua'
+
+}
+const Ra = {
+    x: 55,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 226.0254,
+    num: 88,
+    type: 'alkaline earth metal',
+    color: 'red'
+
+}
+const Ac = {
+    x: 100,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 227.0278,
+    num: 89,
+    type: 'actinide',
+    color: 'orange'
+
+}
+const Rf = {
+    x: 145,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 267.000,
+    num: 104,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Db = {
+    x: 190,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 262.000,
+    num: 105,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Sg = {
+    x: 235,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 269.000,
+    num: 106,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Bh = {
+    x: 280,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 264.000,
+    num: 107,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Hs = {
+    x: 325,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 269.000,
+    num: 108,
+    type: 'transition metal',
+    color: 'purple'
+
+}
+const Mt = {
+    x: 370,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 268.000,
+    num: 109,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Ds = {
+    x: 415,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 281.000,
+    num: 110,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Rg = {
+    x: 460,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 282.000,
+    num: 111,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Cn = {
+    x: 505,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 285.000,
+    num: 112,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Nh = {
+    x: 550,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 286.000,
+    num: 113,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Fl = {
+    x: 595,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 289.000,
+    num: 114,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Mc = {
+    x: 640,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 289.000,
+    num: 115,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Lv = {
+    x: 685,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 293.000,
+    num: 116,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Ts = {
+    x: 730,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 294.000,
+    num: 117,
+    type: 'unknown',
+    color: 'grey'
+
+}
+const Og = {
+    x: 775,
+    y: 280,
+    w: 40,
+    h: 40,
+    mass: 294.000,
+    num: 118,
+    type: 'unknown',
+    color: 'grey'
+}
+
+//row 8
+
+const Ce = {
+    x: 145,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 140.116,
+    num: 58,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Pr = {
+    x: 190,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 140.9076,
+    num: 59,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Nd = {
+    x: 235,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 144.242,
+    num: 60,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Pm = {
+    x: 280,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 145.000,
+    num: 61,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Sm = {
+    x: 325,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 150.36,
+    num: 62,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Eu = {
+    x: 370,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 151.964,
+    num: 63,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Gd = {
+    x: 415,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 157.25,
+    num: 64,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Tb = {
+    x: 460,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 158.9253,
+    num: 65,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+
+}
+const Dy = {
+    x: 505,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 162.500,
+    num: 66,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+const Ho = {
+    x: 550,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 164.9303,
+    num: 67,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+const Er = {
+    x: 595,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 167.259,
+    num: 68,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+const Tm = {
+    x: 640,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 168.9342,
+    num: 69,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+const Yb = {
+    x: 685,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 173.04,
+    num: 70,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+const Lu = {
+    x: 730,
+    y: 345,
+    w: 40,
+    h: 40,
+    mass: 174.967,
+    num: 71,
+    type: 'lanthanide',
+    color: 'CornflowerBlue'
+}
+
+//row 9
+
+const Th = {
+    x: 145,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 232.0381,
+    num: 90,
+    type: 'actinide',
+    color: 'orange'
+}
+const Pa = {
+    x: 190,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 231.0359,
+    num: 91,
+    type: 'actinide',
+    color: 'orange'
+}
+const U = {
+    x: 235,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 238.0289,
+    num: 92,
+    type: 'actinide',
+    color: 'orange'
+}
+const Np = {
+    x: 280,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 237.0000,
+    num: 93,
+    type: 'actinide',
+    color: 'orange'
+}
+const Pu = {
+    x: 325,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 242.0000,
+    num: 94,
+    type: 'actinide',
+    color: 'orange'
+}
+const Am = {
+    x: 370,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 243.06,
+    num: 95,
+    type: 'actinide',
+    color: 'orange'
+}
+const Cm = {
+    x: 415,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 247.0000,
+    num: 96,
+    type: 'actinide',
+    color: 'orange'
+}
+const Bk = {
+    x: 460,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 247.0000,
+    num: 97,
+    type: 'actinide',
+    color: 'orange'
+}
+const Cf = {
+    x: 505,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 251.0000,
+    num: 98,
+    type: 'actinide',
+    color: 'orange'
+}
+const Es = {
+    x: 550,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 252.0000,
+    num: 99,
+    type: 'actinide',
+    color: 'orange'
+}
+const Fm = {
+    x: 595,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 257.0000,
+    num: 100,
+    type: 'actinide',
+    color: 'orange'
+}
+const Md = {
+    x: 640,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 258.0000,
+    num: 101,
+    type: 'actinide',
+    color: 'orange'
+}
+const No = {
+    x:685,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 259.0000,
+    num: 102,
+    type: 'actinide',
+    color: 'orange'
+}
+const Lr = {
+    x: 730,
+    y: 390,
+    w: 40,
+    h: 40,
+    mass: 262.0000,
+    num: 103,
+    type: 'actinide',
+    color: 'orange'
+}
+
+function draw_ion(z){
+    ctx.fillStyle = z.color;
+    ctx.fillRect(z.x, z.y, z.w, z.h);
+}
+
+draw_ion(H);
+draw_ion(He);
+draw_ion(Li);
+draw_ion(Be);
+draw_ion(B);
+draw_ion(C);
+draw_ion(N);
+draw_ion(O);
+draw_ion(F);
+draw_ion(Ne);
+draw_ion(Na);
+draw_ion(Mg);
+draw_ion(Al);
+draw_ion(Si);
+draw_ion(P);
+draw_ion(S);
+draw_ion(Cl);
+draw_ion(Ar);
+draw_ion(K);
+draw_ion(Ca);
+draw_ion(Sc);
+draw_ion(Ti);
+draw_ion(V);
+draw_ion(Cr);
+draw_ion(Mn);
+draw_ion(Fe);
+draw_ion(Co);
+draw_ion(Ni);
+draw_ion(Cu);
+draw_ion(Zn);
+draw_ion(Ga);
+draw_ion(Ge);
+draw_ion(As);
+draw_ion(Se);
+draw_ion(Br);
+draw_ion(Kr);
+draw_ion(Rb);
+draw_ion(Sr);
+draw_ion(Y);
+draw_ion(Zr);
+draw_ion(Nb);
+draw_ion(Mo);
+draw_ion(Tc);
+draw_ion(Ru);
+draw_ion(Rh);
+draw_ion(Pd);
+draw_ion(Ag);
+draw_ion(Cd);
+draw_ion(In);
+draw_ion(Sn);
+draw_ion(Sb);
+draw_ion(Te);
+draw_ion(I);
+draw_ion(Xe);
+draw_ion(Cs);
+draw_ion(Ba);
+draw_ion(La);
+draw_ion(Hf);
+draw_ion(Ta);
+draw_ion(W);
+draw_ion(Re);
+draw_ion(Os);
+draw_ion(Ir);
+draw_ion(Pt);
+draw_ion(Au);
+draw_ion(Hg);
+draw_ion(Tl);
+draw_ion(Pb);
+draw_ion(Bi);
+draw_ion(Po);
+draw_ion(At);
+draw_ion(Rn);
+draw_ion(Fr);
+draw_ion(Ra);
+draw_ion(Ac);
+draw_ion(Rf);
+draw_ion(Db);
+draw_ion(Sg);
+draw_ion(Bh);
+draw_ion(Hs);
+draw_ion(Mt);
+draw_ion(Ds);
+draw_ion(Rg);
+draw_ion(Cn);
+draw_ion(Nh);
+draw_ion(Fl);
+draw_ion(Mc);
+draw_ion(Lv);
+draw_ion(Ts);
+draw_ion(Og);
+draw_ion(Ce);
+draw_ion(Pr);
+draw_ion(Nd);
+draw_ion(Pm);
+draw_ion(Sm);
+draw_ion(Eu);
+draw_ion(Gd);
+draw_ion(Tb);
+draw_ion(Dy);
+draw_ion(Ho);
+draw_ion(Er);
+draw_ion(Tm);
+draw_ion(Yb);
+draw_ion(Lu);
+draw_ion(Th);
+draw_ion(Pa);
+draw_ion(U);
+draw_ion(Np);
+draw_ion(Pu);
+draw_ion(Am);
+draw_ion(Cm);
+draw_ion(Bk);
+draw_ion(Cf);
+draw_ion(Es);
+draw_ion(Fm);
+draw_ion(Md);
+draw_ion(No);
+draw_ion(Lr);
 Hydrogen.onclick = () => displayInfo(elementsObj[1]);
-
-Helium.onclick = () => displayInfo(elementsObj[2]);
-
-Lithium.onclick = () => displayInfo(elementsObj[3]);
-
-Beryllium.onclick = () => displayInfo(elementsObj[4]);
-
-Boron.onclick = () => displayInfo(elementsObj[5]);
-
-Carbon.onclick = () => displayInfo(elementsObj[6]);
-
-Nitrogen.onclick = () => displayInfo(N);
-
-Oxygen.onclick = () => displayInfo(O);
