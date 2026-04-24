@@ -1,28 +1,21 @@
-
-
 const rep_canvas = document.getElementById('rep_canvas');
 const ctx = rep_canvas.getContext('2d');
 const MassNum = document.getElementById('MassNumValue');
+const AtomicNum = document.getElementById('AtomicNumValue');
     MassNumValue.onchange = ()=> {m = MassNumValue.value; 
     ctx.clearRect(0, 0, rep_canvas.width, rep_canvas.height);
     s = 1;
-    a = 6;
+    a = AtomicNumValue.value;
     drawShit(m);
     }
-/*    const AtomicNum = document.getElementById('AtomicNumValue');    
-    AtmoicNumValue.onchange = ()=> {a = AtomicNumValue.value; 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    s = 1;
-    drawShit(m);
-    }
-*/ 
-const color_picker = document.getElementById("color_picker");
-     color_picker.onchange = ()=> rep_canvas.style.backgroundColor = color_picker.value;
 
-const color_picker_draw = document.getElementById("color_picker_draw");
-     color_picker_draw.onchange = ()=> bouncing_circle.color = color_picker_draw.value;
-//const circ_rad = document.getElementById('circ_rad');
-//circ_rad.onchange = () => bouncing_circle.radius = circ_rad.value;
+
+   AtomicNumValue.onchange = ()=> {a = AtomicNumValue.value; 
+    ctx.clearRect(0, 0, rep_canvas.width, rep_canvas.height);
+    s = 1;
+    m = MassNumValue.value;
+    drawShit(m);
+    }
 
 // Set Particles
 m = 12;
