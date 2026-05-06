@@ -1,0 +1,44 @@
+#canvas{
+    border: 2px solid black;
+    background-color: rgb(49, 49, 49);
+}
+
+:root {
+  --reactive_nonmetal: #0e0bd6;
+}
+
+:root {
+  --alkalai_metal: #8f2222;
+}
+
+:root {
+  --metalloid: #1e8ed8;
+}
+
+:root {
+  --post_transition_metal: #21be1c;
+}
+
+:root {
+  --transition_metal: #ddda1c;
+}
+
+:root {
+  --alkaline_earth_metal: #ca7819;
+}
+
+:root {
+  --unknown_properties: #8f8b88;
+}
+
+:root {
+  --nobel_gasses: #a828cf;
+}
+
+:root {
+  --lanthanides: #f5c645;
+}
+
+:root {
+  --actinides: #5a7fe4;
+}
