@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: row;
 }
 
 #boil{
@@ -27,11 +28,7 @@ body {
   display: flex;
   justify-content: flex-start;
   position: relative;
-}
-
-#image {
-  width: auto;
-  height: 20vw;
+  margin-left: 20px;
 }
 
 #mass {
@@ -86,4 +83,16 @@ body {
   top: 14%;
   left: 2%;
   font-weight: bolder;
+}
+
+#Table {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#table {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
