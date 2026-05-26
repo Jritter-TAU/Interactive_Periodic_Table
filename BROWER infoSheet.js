@@ -1367,11 +1367,14 @@ const Lr = {
 
 }
 
+
+
 const canvas = document.getElementById('table');
 const ctx = canvas.getContext('2d');
 
 ctx.fillStyle = 'gray';
 ctx.fillRect(850 , 0 , 220 , 450);
+
 
 //drawing the table
 {
@@ -1570,9 +1573,10 @@ ctx.font = '20px Arial';
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
 
+
 //row 1
 function draw_H() {
-    if (event.clientX > H.x && event.clientX < H.x + H.w && event.clientY > H.y && event.clientY < H.y + H.h) {
+    if (event.offsetX > H.x && event.offsetX < H.x + H.w && event.offsetY > H.y && event.offsetY < H.y + H.h) {
         H.w = 45;
         H.h = 45;
         H.x = 7.5;
@@ -1603,7 +1607,7 @@ function draw_H() {
 }
 }
 function draw_He() {
-    if (event.clientX > He.x && event.clientX < He.x + He.w && event.clientY > He.y && event.clientY < He.y + He.h) {
+    if (event.offsetX > He.x && event.offsetX < He.x + He.w && event.offsetY > He.y && event.offsetY < He.y + He.h) {
         He.w = 45;
         He.h = 45;
         He.x = 772.5;
@@ -1633,9 +1637,10 @@ function draw_He() {
         ctx.fillText('2', He.x + 5, He.y + 10);
 }
 }
+
 //row 2
 function draw_Li() {
-    if (event.clientX > Li.x && event.clientX < Li.x + Li.w && event.clientY > Li.y && event.clientY < Li.y + Li.h) {
+    if (event.offsetX > Li.x && event.offsetX < Li.x + Li.w && event.offsetY > Li.y && event.offsetY < Li.y + Li.h) {
         Li.w = 45;
         Li.h = 45;
         Li.x = 7.5;
@@ -1667,7 +1672,7 @@ function draw_Li() {
 }
 }
 function draw_Be() {
-    if (event.clientX > Be.x && event.clientX < Be.x + Be.w && event.clientY > Be.y && event.clientY < Be.y + Be.h) {
+    if (event.offsetX > Be.x && event.offsetX < Be.x + Be.w && event.offsetY > Be.y && event.offsetY < Be.y + Be.h) {
         Be.w = 45;
         Be.h = 45;
         Be.x = 52.5;
@@ -1697,7 +1702,7 @@ function draw_Be() {
 }
 }
 function draw_B() {
-    if (event.clientX > B.x && event.clientX < B.x + B.w && event.clientY > B.y && event.clientY < B.y + B.h) {
+    if (event.offsetX > B.x && event.offsetX < B.x + B.w && event.offsetY > B.y && event.offsetY < B.y + B.h) {
         B.w = 45;
         B.h = 45;
         B.x = 547.5;
@@ -1727,7 +1732,7 @@ function draw_B() {
 }
 }
 function draw_C() {
-    if (event.clientX > C.x && event.clientX < C.x + C.w && event.clientY > C.y && event.clientY < C.y + C.h) {
+    if (event.offsetX > C.x && event.offsetX < C.x + C.w && event.offsetY > C.y && event.offsetY < C.y + C.h) {
         C.w = 45;
         C.h = 45;
         C.x = 592.5;
@@ -1757,7 +1762,7 @@ function draw_C() {
 }
 }
 function draw_N() {
-    if (event.clientX > N.x && event.clientX < N.x + N.w && event.clientY > N.y && event.clientY < N.y + N.h) {
+    if (event.offsetX > N.x && event.offsetX < N.x + N.w && event.offsetY > N.y && event.offsetY < N.y + N.h) {
         N.w = 45;
         N.h = 45;
         N.x = 637.5;
@@ -1787,7 +1792,7 @@ function draw_N() {
 }
 }
 function draw_O() {
-    if (event.clientX > O.x && event.clientX < O.x + O.w && event.clientY > O.y && event.clientY < O.y + O.h) {
+    if (event.offsetX > O.x && event.offsetX < O.x + O.w && event.offsetY > O.y && event.offsetY < O.y + O.h) {
         O.w = 45;
         O.h = 45;
         O.x = 682.5;
@@ -1817,7 +1822,7 @@ function draw_O() {
 }
 }
 function draw_F() {
-    if (event.clientX > F.x && event.clientX < F.x + F.w && event.clientY > F.y && event.clientY < F.y + F.h) {
+    if (event.offsetX > F.x && event.offsetX < F.x + F.w && event.offsetY > F.y && event.offsetY < F.y + F.h) {
         F.w = 45;
         F.h = 45;
         F.x = 727.5;
@@ -1847,7 +1852,7 @@ function draw_F() {
 }
 }
 function draw_Ne() {
-    if (event.clientX > Ne.x && event.clientX < Ne.x + Ne.w && event.clientY > Ne.y && event.clientY < Ne.y + Ne.h) {
+    if (event.offsetX > Ne.x && event.offsetX < Ne.x + Ne.w && event.offsetY > Ne.y && event.offsetY < Ne.y + Ne.h) {
         Ne.w = 45;
         Ne.h = 45;
         Ne.x = 772.5;
@@ -1876,9 +1881,10 @@ function draw_Ne() {
         ctx.fillText('10', Ne.x + 6, Ne.y + 10);
 }
 }
+
 //row 3
 function draw_Na() {
-    if (event.clientX > Na.x && event.clientX < Na.x + Na.w && event.clientY > Na.y && event.clientY < Na.y + Na.h) {
+    if (event.offsetX > Na.x && event.offsetX < Na.x + Na.w && event.offsetY > Na.y && event.offsetY < Na.y + Na.h) {
         Na.w = 45;
         Na.h = 45;
         Na.x = 7.5;
@@ -1908,7 +1914,7 @@ function draw_Na() {
 }
 }
 function draw_Mg() {
-    if (event.clientX > Mg.x && event.clientX < Mg.x + Mg.w && event.clientY > Mg.y && event.clientY < Mg.y + Mg.h) {
+    if (event.offsetX > Mg.x && event.offsetX < Mg.x + Mg.w && event.offsetY > Mg.y && event.offsetY < Mg.y + Mg.h) {
         Mg.w = 45;
         Mg.h = 45;
         Mg.x = 52.5;
@@ -1938,7 +1944,7 @@ function draw_Mg() {
 }
 }
 function draw_Al() {
-    if (event.clientX > Al.x && event.clientX < Al.x + Al.w && event.clientY > Al.y && event.clientY < Al.y + Al.h) {
+    if (event.offsetX > Al.x && event.offsetX < Al.x + Al.w && event.offsetY > Al.y && event.offsetY < Al.y + Al.h) {
         Al.w = 45;
         Al.h = 45;
         Al.x = 547.5;
@@ -1968,7 +1974,7 @@ function draw_Al() {
 }
 }
 function draw_Si() {
-    if (event.clientX > Si.x && event.clientX < Si.x + Si.w && event.clientY > Si.y && event.clientY < Si.y + Si.h) {
+    if (event.offsetX > Si.x && event.offsetX < Si.x + Si.w && event.offsetY > Si.y && event.offsetY < Si.y + Si.h) {
         Si.w = 45;
         Si.h = 45;
         Si.x = 592.5;
@@ -1998,7 +2004,7 @@ function draw_Si() {
 }
 }
 function draw_P() {
-    if (event.clientX > P.x && event.clientX < P.x + P.w && event.clientY > P.y && event.clientY < P.y + P.h) {
+    if (event.offsetX > P.x && event.offsetX < P.x + P.w && event.offsetY > P.y && event.offsetY < P.y + P.h) {
         P.w = 45;
         P.h = 45;
         P.x = 637.5;
@@ -2028,7 +2034,7 @@ function draw_P() {
 }
 }
 function draw_S() {
-    if (event.clientX > S.x && event.clientX < S.x + S.w && event.clientY > S.y && event.clientY < S.y + S.h) {
+    if (event.offsetX > S.x && event.offsetX < S.x + S.w && event.offsetY > S.y && event.offsetY < S.y + S.h) {
         S.w = 45;
         S.h = 45;
         S.x = 682.5;
@@ -2058,7 +2064,7 @@ function draw_S() {
 }
 }
 function draw_Cl() {
-    if (event.clientX > Cl.x && event.clientX < Cl.x + Cl.w && event.clientY > Cl.y && event.clientY < Cl.y + Cl.h) {
+    if (event.offsetX > Cl.x && event.offsetX < Cl.x + Cl.w && event.offsetY > Cl.y && event.offsetY < Cl.y + Cl.h) {
         Cl.w = 45;
         Cl.h = 45;
         Cl.x = 727.5;
@@ -2088,7 +2094,7 @@ function draw_Cl() {
 }
 }
 function draw_Ar() {
-    if (event.clientX > Ar.x && event.clientX < Ar.x + Ar.w && event.clientY > Ar.y && event.clientY < Ar.y + Ar.h) {
+    if (event.offsetX > Ar.x && event.offsetX < Ar.x + Ar.w && event.offsetY > Ar.y && event.offsetY < Ar.y + Ar.h) {
         Ar.w = 45;
         Ar.h = 45;
         Ar.x = 772.5;
@@ -2117,9 +2123,10 @@ function draw_Ar() {
         ctx.fillText('18', Ar.x + 6, Ar.y + 10);
 }
 }
+
 //row 4
 function draw_K() {
-    if (event.clientX > K.x && event.clientX < K.x + K.w && event.clientY > K.y && event.clientY < K.y + K.h) {
+    if (event.offsetX > K.x && event.offsetX < K.x + K.w && event.offsetY > K.y && event.offsetY < K.y + K.h) {
         K.w = 45;
         K.h = 45;
         K.x = 7.5;
@@ -2149,7 +2156,7 @@ function draw_K() {
 }
 }
 function draw_Ca() {
-    if (event.clientX > Ca.x && event.clientX < Ca.x + Ca.w && event.clientY > Ca.y && event.clientY < Ca.y + Ca.h) {
+    if (event.offsetX > Ca.x && event.offsetX < Ca.x + Ca.w && event.offsetY > Ca.y && event.offsetY < Ca.y + Ca.h) {
         Ca.w = 45;
         Ca.h = 45;
         Ca.x = 52.5;
@@ -2179,7 +2186,7 @@ function draw_Ca() {
 }
 }
 function draw_Sc() {
-    if (event.clientX > Sc.x && event.clientX < Sc.x + Sc.w && event.clientY > Sc.y && event.clientY < Sc.y + Sc.h) {
+    if (event.offsetX > Sc.x && event.offsetX < Sc.x + Sc.w && event.offsetY > Sc.y && event.offsetY < Sc.y + Sc.h) {
         Sc.w = 45;
         Sc.h = 45;
         Sc.x = 97.5;
@@ -2209,7 +2216,7 @@ function draw_Sc() {
 }
 }
 function draw_Ti() {
-    if (event.clientX > Ti.x && event.clientX < Ti.x + Ti.w && event.clientY > Ti.y && event.clientY < Ti.y + Ti.h) {
+    if (event.offsetX > Ti.x && event.offsetX < Ti.x + Ti.w && event.offsetY > Ti.y && event.offsetY < Ti.y + Ti.h) {
         Ti.w = 45;
         Ti.h = 45;
         Ti.x = 142.5;
@@ -2239,7 +2246,7 @@ function draw_Ti() {
 }
 }
 function draw_V() {
-    if (event.clientX > V.x && event.clientX < V.x + V.w && event.clientY > V.y && event.clientY < V.y + V.h) {
+    if (event.offsetX > V.x && event.offsetX < V.x + V.w && event.offsetY > V.y && event.offsetY < V.y + V.h) {
         V.w = 45;
         V.h = 45;
         V.x = 187.5;
@@ -2269,7 +2276,7 @@ function draw_V() {
 }
 }
 function draw_Cr() {
-    if (event.clientX > Cr.x && event.clientX < Cr.x + Cr.w && event.clientY > Cr.y && event.clientY < Cr.y + Cr.h) {
+    if (event.offsetX > Cr.x && event.offsetX < Cr.x + Cr.w && event.offsetY > Cr.y && event.offsetY < Cr.y + Cr.h) {
         Cr.w = 45;
         Cr.h = 45;
         Cr.x = 232.5;
@@ -2299,7 +2306,7 @@ function draw_Cr() {
 }
 }
 function draw_Mn() {
-    if (event.clientX > Mn.x && event.clientX < Mn.x + Mn.w && event.clientY > Mn.y && event.clientY < Mn.y + Mn.h) {
+    if (event.offsetX > Mn.x && event.offsetX < Mn.x + Mn.w && event.offsetY > Mn.y && event.offsetY < Mn.y + Mn.h) {
         Mn.w = 45;
         Mn.h = 45;
         Mn.x = 277.5;
@@ -2329,7 +2336,7 @@ function draw_Mn() {
 }
 }
 function draw_Fe() {
-    if (event.clientX > Fe.x && event.clientX < Fe.x + Fe.w && event.clientY > Fe.y && event.clientY < Fe.y + Fe.h) {
+    if (event.offsetX > Fe.x && event.offsetX < Fe.x + Fe.w && event.offsetY > Fe.y && event.offsetY < Fe.y + Fe.h) {
         Fe.w = 45;
         Fe.h = 45;
         Fe.x = 322.5;
@@ -2359,7 +2366,7 @@ function draw_Fe() {
 }
 }
 function draw_Co() {
-    if (event.clientX > Co.x && event.clientX < Co.x + Co.w && event.clientY > Co.y && event.clientY < Co.y + Co.h) {
+    if (event.offsetX > Co.x && event.offsetX < Co.x + Co.w && event.offsetY > Co.y && event.offsetY < Co.y + Co.h) {
         Co.w = 45;
         Co.h = 45;
         Co.x = 367.5;
@@ -2389,7 +2396,7 @@ function draw_Co() {
 }
 }
 function draw_Ni() {
-    if (event.clientX > Ni.x && event.clientX < Ni.x + Ni.w && event.clientY > Ni.y && event.clientY < Ni.y + Ni.h) {
+    if (event.offsetX > Ni.x && event.offsetX < Ni.x + Ni.w && event.offsetY > Ni.y && event.offsetY < Ni.y + Ni.h) {
         Ni.w = 45;
         Ni.h = 45;
         Ni.x = 412.5;
@@ -2419,7 +2426,7 @@ function draw_Ni() {
 }
 }
 function draw_Cu() {
-    if (event.clientX > Cu.x && event.clientX < Cu.x + Cu.w && event.clientY > Cu.y && event.clientY < Cu.y + Cu.h) {
+    if (event.offsetX > Cu.x && event.offsetX < Cu.x + Cu.w && event.offsetY > Cu.y && event.offsetY < Cu.y + Cu.h) {
         Cu.w = 45;
         Cu.h = 45;
         Cu.x = 457.5;
@@ -2449,7 +2456,7 @@ function draw_Cu() {
 }
 }
 function draw_Zn() {
-    if (event.clientX > Zn.x && event.clientX < Zn.x + Zn.w && event.clientY > Zn.y && event.clientY < Zn.y + Zn.h) {
+    if (event.offsetX > Zn.x && event.offsetX < Zn.x + Zn.w && event.offsetY > Zn.y && event.offsetY < Zn.y + Zn.h) {
         Zn.w = 45;
         Zn.h = 45;
         Zn.x = 502.5;
@@ -2479,7 +2486,7 @@ function draw_Zn() {
 }
 }
 function draw_Ga() {
-    if (event.clientX > Ga.x && event.clientX < Ga.x + Ga.w && event.clientY > Ga.y && event.clientY < Ga.y + Ga.h) {
+    if (event.offsetX > Ga.x && event.offsetX < Ga.x + Ga.w && event.offsetY > Ga.y && event.offsetY < Ga.y + Ga.h) {
         Ga.w = 45;
         Ga.h = 45;
         Ga.x = 547.5;
@@ -2509,7 +2516,7 @@ function draw_Ga() {
 }
 }
 function draw_Ge() {
-    if (event.clientX > Ge.x && event.clientX < Ge.x + Ge.w && event.clientY > Ge.y && event.clientY < Ge.y + Ge.h) {
+    if (event.offsetX > Ge.x && event.offsetX < Ge.x + Ge.w && event.offsetY > Ge.y && event.offsetY < Ge.y + Ge.h) {
         Ge.w = 45;
         Ge.h = 45;
         Ge.x = 592.5;
@@ -2539,7 +2546,7 @@ function draw_Ge() {
 }
 }
 function draw_As() {
-    if (event.clientX > As.x && event.clientX < As.x + As.w && event.clientY > As.y && event.clientY < As.y + As.h) {
+    if (event.offsetX > As.x && event.offsetX < As.x + As.w && event.offsetY > As.y && event.offsetY < As.y + As.h) {
         As.w = 45;
         As.h = 45;
         As.x = 637.5;
@@ -2569,7 +2576,7 @@ function draw_As() {
 }
 }
 function draw_Se() {
-    if (event.clientX > Se.x && event.clientX < Se.x + Se.w && event.clientY > Se.y && event.clientY < Se.y + Se.h) {
+    if (event.offsetX > Se.x && event.offsetX < Se.x + Se.w && event.offsetY > Se.y && event.offsetY < Se.y + Se.h) {
         Se.w = 45;
         Se.h = 45;
         Se.x = 682.5;
@@ -2599,7 +2606,7 @@ function draw_Se() {
 }
 }
 function draw_Br() {
-    if (event.clientX > Br.x && event.clientX < Br.x + Br.w && event.clientY > Br.y && event.clientY < Br.y + Br.h) {
+    if (event.offsetX > Br.x && event.offsetX < Br.x + Br.w && event.offsetY > Br.y && event.offsetY < Br.y + Br.h) {
         Br.w = 45;
         Br.h = 45;
         Br.x = 727.5;
@@ -2629,7 +2636,7 @@ function draw_Br() {
 }
 }
 function draw_Kr() {
-    if (event.clientX > Kr.x && event.clientX < Kr.x + Kr.w && event.clientY > Kr.y && event.clientY < Kr.y + Kr.h) {
+    if (event.offsetX > Kr.x && event.offsetX < Kr.x + Kr.w && event.offsetY > Kr.y && event.offsetY < Kr.y + Kr.h) {
         Kr.w = 45;
         Kr.h = 45;
         Kr.x = 772.5;
@@ -2658,9 +2665,10 @@ function draw_Kr() {
         ctx.fillText('36', Kr.x + 6, Kr.y + 10);
 }
 }
+
 //row 5
 function draw_Rb() {
-    if (event.clientX > Rb.x && event.clientX < Rb.x + Rb.w && event.clientY > Rb.y && event.clientY < Rb.y + Rb.h) {
+    if (event.offsetX > Rb.x && event.offsetX < Rb.x + Rb.w && event.offsetY > Rb.y && event.offsetY < Rb.y + Rb.h) {
         Rb.w = 45;
         Rb.h = 45;
         Rb.x = 7.5;
@@ -2690,7 +2698,7 @@ function draw_Rb() {
 }
 }
 function draw_Sr() {
-    if (event.clientX > Sr.x && event.clientX < Sr.x + Sr.w && event.clientY > Sr.y && event.clientY < Sr.y + Sr.h) {
+    if (event.offsetX > Sr.x && event.offsetX < Sr.x + Sr.w && event.offsetY > Sr.y && event.offsetY < Sr.y + Sr.h) {
         Sr.w = 45;
         Sr.h = 45;
         Sr.x = 52.5;
@@ -2720,7 +2728,7 @@ function draw_Sr() {
 }
 }
 function draw_Y() {
-    if (event.clientX > Y.x && event.clientX < Y.x + Y.w && event.clientY > Y.y && event.clientY < Y.y + Y.h) {
+    if (event.offsetX > Y.x && event.offsetX < Y.x + Y.w && event.offsetY > Y.y && event.offsetY < Y.y + Y.h) {
         Y.w = 45;
         Y.h = 45;
         Y.x = 97.5;
@@ -2750,7 +2758,7 @@ function draw_Y() {
 }
 }
 function draw_Zr() {
-    if (event.clientX > Zr.x && event.clientX < Zr.x + Zr.w && event.clientY > Zr.y && event.clientY < Zr.y + Zr.h) {
+    if (event.offsetX > Zr.x && event.offsetX < Zr.x + Zr.w && event.offsetY > Zr.y && event.offsetY < Zr.y + Zr.h) {
         Zr.w = 45;
         Zr.h = 45;
         Zr.x = 142.5;
@@ -2780,7 +2788,7 @@ function draw_Zr() {
 }
 }
 function draw_Nb() {
-    if (event.clientX > Nb.x && event.clientX < Nb.x + Nb.w && event.clientY > Nb.y && event.clientY < Nb.y + Nb.h) {
+    if (event.offsetX > Nb.x && event.offsetX < Nb.x + Nb.w && event.offsetY > Nb.y && event.offsetY < Nb.y + Nb.h) {
         Nb.w = 45;
         Nb.h = 45;
         Nb.x = 187.5;
@@ -2810,7 +2818,7 @@ function draw_Nb() {
 }
 }
 function draw_Mo() {
-    if (event.clientX > Mo.x && event.clientX < Mo.x + Mo.w && event.clientY > Mo.y && event.clientY < Mo.y + Mo.h) {
+    if (event.offsetX > Mo.x && event.offsetX < Mo.x + Mo.w && event.offsetY > Mo.y && event.offsetY < Mo.y + Mo.h) {
         Mo.w = 45;
         Mo.h = 45;
         Mo.x = 232.5;
@@ -2840,7 +2848,7 @@ function draw_Mo() {
 }
 }
 function draw_Tc() {
-    if (event.clientX > Tc.x && event.clientX < Tc.x + Tc.w && event.clientY > Tc.y && event.clientY < Tc.y + Tc.h) {
+    if (event.offsetX > Tc.x && event.offsetX < Tc.x + Tc.w && event.offsetY > Tc.y && event.offsetY < Tc.y + Tc.h) {
         Tc.w = 45;
         Tc.h = 45;
         Tc.x = 277.5;
@@ -2870,7 +2878,7 @@ function draw_Tc() {
 }
 }
 function draw_Ru() {
-    if (event.clientX > Ru.x && event.clientX < Ru.x + Ru.w && event.clientY > Ru.y && event.clientY < Ru.y + Ru.h) {
+    if (event.offsetX > Ru.x && event.offsetX < Ru.x + Ru.w && event.offsetY > Ru.y && event.offsetY < Ru.y + Ru.h) {
         Ru.w = 45;
         Ru.h = 45;
         Ru.x = 322.5;
@@ -2900,7 +2908,7 @@ function draw_Ru() {
 }
 }
 function draw_Rh() {
-    if (event.clientX > Rh.x && event.clientX < Rh.x + Rh.w && event.clientY > Rh.y && event.clientY < Rh.y + Rh.h) {
+    if (event.offsetX > Rh.x && event.offsetX < Rh.x + Rh.w && event.offsetY > Rh.y && event.offsetY < Rh.y + Rh.h) {
         Rh.w = 45;
         Rh.h = 45;
         Rh.x = 367.5;
@@ -2930,7 +2938,7 @@ function draw_Rh() {
 }
 }
 function draw_Pd() {
-    if (event.clientX > Pd.x && event.clientX < Pd.x + Pd.w && event.clientY > Pd.y && event.clientY < Pd.y + Pd.h) {
+    if (event.offsetX > Pd.x && event.offsetX < Pd.x + Pd.w && event.offsetY > Pd.y && event.offsetY < Pd.y + Pd.h) {
         Pd.w = 45;
         Pd.h = 45;
         Pd.x = 412.5;
@@ -2960,7 +2968,7 @@ function draw_Pd() {
 }
 }
 function draw_Ag() {
-    if (event.clientX > Ag.x && event.clientX < Ag.x + Ag.w && event.clientY > Ag.y && event.clientY < Ag.y + Ag.h) {
+    if (event.offsetX > Ag.x && event.offsetX < Ag.x + Ag.w && event.offsetY > Ag.y && event.offsetY < Ag.y + Ag.h) {
         Ag.w = 45;
         Ag.h = 45;
         Ag.x = 457.5;
@@ -2990,7 +2998,7 @@ function draw_Ag() {
 }
 }
 function draw_Cd() {
-    if (event.clientX > Cd.x && event.clientX < Cd.x + Cd.w && event.clientY > Cd.y && event.clientY < Cd.y + Cd.h) {
+    if (event.offsetX > Cd.x && event.offsetX < Cd.x + Cd.w && event.offsetY > Cd.y && event.offsetY < Cd.y + Cd.h) {
         Cd.w = 45;
         Cd.h = 45;
         Cd.x = 502.5;
@@ -3020,7 +3028,7 @@ function draw_Cd() {
 }
 }
 function draw_In() {
-    if (event.clientX > In.x && event.clientX < In.x + In.w && event.clientY > In.y && event.clientY < In.y + In.h) {
+    if (event.offsetX > In.x && event.offsetX < In.x + In.w && event.offsetY > In.y && event.offsetY < In.y + In.h) {
         In.w = 45;
         In.h = 45;
         In.x = 547.5;
@@ -3050,7 +3058,7 @@ function draw_In() {
 }
 }
 function draw_Sn() {
-    if (event.clientX > Sn.x && event.clientX < Sn.x + Sn.w && event.clientY > Sn.y && event.clientY < Sn.y + Sn.h) {
+    if (event.offsetX > Sn.x && event.offsetX < Sn.x + Sn.w && event.offsetY > Sn.y && event.offsetY < Sn.y + Sn.h) {
         Sn.w = 45;
         Sn.h = 45;
         Sn.x = 592.5;
@@ -3080,7 +3088,7 @@ function draw_Sn() {
 }
 }
 function draw_Sb() {
-    if (event.clientX > Sb.x && event.clientX < Sb.x + Sb.w && event.clientY > Sb.y && event.clientY < Sb.y + Sb.h) {
+    if (event.offsetX > Sb.x && event.offsetX < Sb.x + Sb.w && event.offsetY > Sb.y && event.offsetY < Sb.y + Sb.h) {
         Sb.w = 45;
         Sb.h = 45;
         Sb.x = 637.5;
@@ -3110,7 +3118,7 @@ function draw_Sb() {
 }
 }
 function draw_Te() {
-    if (event.clientX > Te.x && event.clientX < Te.x + Te.w && event.clientY > Te.y && event.clientY < Te.y + Te.h) {
+    if (event.offsetX > Te.x && event.offsetX < Te.x + Te.w && event.offsetY > Te.y && event.offsetY < Te.y + Te.h) {
         Te.w = 45;
         Te.h = 45;
         Te.x = 682.5;
@@ -3140,7 +3148,7 @@ function draw_Te() {
 }
 }
 function draw_I() {
-    if (event.clientX > I.x && event.clientX < I.x + I.w && event.clientY > I.y && event.clientY < I.y + I.h) {
+    if (event.offsetX > I.x && event.offsetX < I.x + I.w && event.offsetY > I.y && event.offsetY < I.y + I.h) {
         I.w = 45;
         I.h = 45;
         I.x = 727.5;
@@ -3170,7 +3178,7 @@ function draw_I() {
 }
 }
 function draw_Xe() {
-    if (event.clientX > Xe.x && event.clientX < Xe.x + Xe.w && event.clientY > Xe.y && event.clientY < Xe.y + Xe.h) {
+    if (event.offsetX > Xe.x && event.offsetX < Xe.x + Xe.w && event.offsetY > Xe.y && event.offsetY < Xe.y + Xe.h) {
         Xe.w = 45;
         Xe.h = 45;
         Xe.x = 772.5;
@@ -3201,9 +3209,8 @@ function draw_Xe() {
 }
 
 //row 6
-
 function draw_Cs() {
-    if (event.clientX > Cs.x && event.clientX < Cs.x + Cs.w && event.clientY > Cs.y && event.clientY < Cs.y + Cs.h) {
+    if (event.offsetX > Cs.x && event.offsetX < Cs.x + Cs.w && event.offsetY > Cs.y && event.offsetY < Cs.y + Cs.h) {
         Cs.w = 45;
         Cs.h = 45;
         Cs.x = 7.5;
@@ -3233,7 +3240,7 @@ function draw_Cs() {
 }
 }
 function draw_Ba() {
-    if (event.clientX > Ba.x && event.clientX < Ba.x + Ba.w && event.clientY > Ba.y && event.clientY < Ba.y + Ba.h) {
+    if (event.offsetX > Ba.x && event.offsetX < Ba.x + Ba.w && event.offsetY > Ba.y && event.offsetY < Ba.y + Ba.h) {
         Ba.w = 45;
         Ba.h = 45;
         Ba.x = 52.5;
@@ -3263,7 +3270,7 @@ function draw_Ba() {
 }
 }
 function draw_La() {
-    if (event.clientX > La.x && event.clientX < La.x + La.w && event.clientY > La.y && event.clientY < La.y + La.h) {
+    if (event.offsetX > La.x && event.offsetX < La.x + La.w && event.offsetY > La.y && event.offsetY < La.y + La.h) {
         La.w = 45;
         La.h = 45;
         La.x = 97.5;
@@ -3293,7 +3300,7 @@ function draw_La() {
 }
 }
 function draw_Hf() {
-    if (event.clientX > Hf.x && event.clientX < Hf.x + Hf.w && event.clientY > Hf.y && event.clientY < Hf.y + Hf.h) {
+    if (event.offsetX > Hf.x && event.offsetX < Hf.x + Hf.w && event.offsetY > Hf.y && event.offsetY < Hf.y + Hf.h) {
         Hf.w = 45;
         Hf.h = 45;
         Hf.x = 142.5;
@@ -3323,7 +3330,7 @@ function draw_Hf() {
 }
 }
 function draw_Ta() {
-    if (event.clientX > Ta.x && event.clientX < Ta.x + Ta.w && event.clientY > Ta.y && event.clientY < Ta.y + Ta.h) {
+    if (event.offsetX > Ta.x && event.offsetX < Ta.x + Ta.w && event.offsetY > Ta.y && event.offsetY < Ta.y + Ta.h) {
         Ta.w = 45;
         Ta.h = 45;
         Ta.x = 187.5;
@@ -3353,7 +3360,7 @@ function draw_Ta() {
 }
 }
 function draw_W() {
-    if (event.clientX > W.x && event.clientX < W.x + W.w && event.clientY > W.y && event.clientY < W.y + W.h) {
+    if (event.offsetX > W.x && event.offsetX < W.x + W.w && event.offsetY > W.y && event.offsetY < W.y + W.h) {
         W.w = 45;
         W.h = 45;
         W.x = 232.5;
@@ -3383,7 +3390,7 @@ function draw_W() {
 }
 }
 function draw_Re() {
-    if (event.clientX > Re.x && event.clientX < Re.x + Re.w && event.clientY > Re.y && event.clientY < Re.y + Re.h) {
+    if (event.offsetX > Re.x && event.offsetX < Re.x + Re.w && event.offsetY > Re.y && event.offsetY < Re.y + Re.h) {
         Re.w = 45;
         Re.h = 45;
         Re.x = 277.5;
@@ -3413,7 +3420,7 @@ function draw_Re() {
 }
 }
 function draw_Os() {
-    if (event.clientX > Os.x && event.clientX < Os.x + Os.w && event.clientY > Os.y && event.clientY < Os.y + Os.h) {
+    if (event.offsetX > Os.x && event.offsetX < Os.x + Os.w && event.offsetY > Os.y && event.offsetY < Os.y + Os.h) {
         Os.w = 45;
         Os.h = 45;
         Os.x = 322.5;
@@ -3443,7 +3450,7 @@ function draw_Os() {
 }
 }
 function draw_Ir() {
-    if (event.clientX > Ir.x && event.clientX < Ir.x + Ir.w && event.clientY > Ir.y && event.clientY < Ir.y + Ir.h) {
+    if (event.offsetX > Ir.x && event.offsetX < Ir.x + Ir.w && event.offsetY > Ir.y && event.offsetY < Ir.y + Ir.h) {
         Ir.w = 45;
         Ir.h = 45;
         Ir.x = 367.5;
@@ -3473,7 +3480,7 @@ function draw_Ir() {
 }
 }
 function draw_Pt() {
-    if (event.clientX > Pt.x && event.clientX < Pt.x + Pt.w && event.clientY > Pt.y && event.clientY < Pt.y + Pt.h) {
+    if (event.offsetX > Pt.x && event.offsetX < Pt.x + Pt.w && event.offsetY > Pt.y && event.offsetY < Pt.y + Pt.h) {
         Pt.w = 45;
         Pt.h = 45;
         Pt.x = 412.5;
@@ -3503,7 +3510,7 @@ function draw_Pt() {
 }
 }
 function draw_Au() {
-    if (event.clientX > Au.x && event.clientX < Au.x + Au.w && event.clientY > Au.y && event.clientY < Au.y + Au.h) {
+    if (event.offsetX > Au.x && event.offsetX < Au.x + Au.w && event.offsetY > Au.y && event.offsetY < Au.y + Au.h) {
         Au.w = 45;
         Au.h = 45;
         Au.x = 457.5;
@@ -3533,7 +3540,7 @@ function draw_Au() {
 }
 }
 function draw_Hg() {
-    if (event.clientX > Hg.x && event.clientX < Hg.x + Hg.w && event.clientY > Hg.y && event.clientY < Hg.y + Hg.h) {
+    if (event.offsetX > Hg.x && event.offsetX < Hg.x + Hg.w && event.offsetY > Hg.y && event.offsetY < Hg.y + Hg.h) {
         Hg.w = 45;
         Hg.h = 45;
         Hg.x = 502.5;
@@ -3563,7 +3570,7 @@ function draw_Hg() {
 }
 }
 function draw_Tl() {
-    if (event.clientX > Tl.x && event.clientX < Tl.x + Tl.w && event.clientY > Tl.y && event.clientY < Tl.y + Tl.h) {
+    if (event.offsetX > Tl.x && event.offsetX < Tl.x + Tl.w && event.offsetY > Tl.y && event.offsetY < Tl.y + Tl.h) {
         Tl.w = 45;
         Tl.h = 45;
         Tl.x = 547.5;
@@ -3593,7 +3600,7 @@ function draw_Tl() {
 }
 }
 function draw_Pb() {
-    if (event.clientX > Pb.x && event.clientX < Pb.x + Pb.w && event.clientY > Pb.y && event.clientY < Pb.y + Pb.h) {
+    if (event.offsetX > Pb.x && event.offsetX < Pb.x + Pb.w && event.offsetY > Pb.y && event.offsetY < Pb.y + Pb.h) {
         Pb.w = 45;
         Pb.h = 45;
         Pb.x = 592.5;
@@ -3623,7 +3630,7 @@ function draw_Pb() {
 }
 }
 function draw_Bi() {
-    if (event.clientX > Bi.x && event.clientX < Bi.x + Bi.w && event.clientY > Bi.y && event.clientY < Bi.y + Bi.h) {
+    if (event.offsetX > Bi.x && event.offsetX < Bi.x + Bi.w && event.offsetY > Bi.y && event.offsetY < Bi.y + Bi.h) {
         Bi.w = 45;
         Bi.h = 45;
         Bi.x = 637.5;
@@ -3653,7 +3660,7 @@ function draw_Bi() {
 }
 }
 function draw_Po() {
-    if (event.clientX > Po.x && event.clientX < Po.x + Po.w && event.clientY > Po.y && event.clientY < Po.y + Po.h) {
+    if (event.offsetX > Po.x && event.offsetX < Po.x + Po.w && event.offsetY > Po.y && event.offsetY < Po.y + Po.h) {
         Po.w = 45;
         Po.h = 45;
         Po.x = 682.5;
@@ -3683,7 +3690,7 @@ function draw_Po() {
 }
 }
 function draw_At() {
-    if (event.clientX > At.x && event.clientX < At.x + At.w && event.clientY > At.y && event.clientY < At.y + At.h) {
+    if (event.offsetX > At.x && event.offsetX < At.x + At.w && event.offsetY > At.y && event.offsetY < At.y + At.h) {
         At.w = 45;
         At.h = 45;
         At.x = 727.5;
@@ -3713,7 +3720,7 @@ function draw_At() {
 }
 }
 function draw_Rn() {
-    if (event.clientX > Rn.x && event.clientX < Rn.x + Rn.w && event.clientY > Rn.y && event.clientY < Rn.y + Rn.h) {
+    if (event.offsetX > Rn.x && event.offsetX < Rn.x + Rn.w && event.offsetY > Rn.y && event.offsetY < Rn.y + Rn.h) {
         Rn.w = 45;
         Rn.h = 45;
         Rn.x = 772.5;
@@ -3742,9 +3749,10 @@ function draw_Rn() {
         ctx.fillText('86', Rn.x + 6, Rn.y + 10);
 }
 }
+
 //row 7
 function draw_Fr() {
-    if (event.clientX > Fr.x && event.clientX < Fr.x + Fr.w && event.clientY > Fr.y && event.clientY < Fr.y + Fr.h) {
+    if (event.offsetX > Fr.x && event.offsetX < Fr.x + Fr.w && event.offsetY > Fr.y && event.offsetY < Fr.y + Fr.h) {
         Fr.w = 45;
         Fr.h = 45;
         Fr.x = 7.5;
@@ -3775,7 +3783,7 @@ function draw_Fr() {
 }
 }
 function draw_Ra() {
-    if (event.clientX > Ra.x && event.clientX < Ra.x + Ra.w && event.clientY > Ra.y && event.clientY < Ra.y + Ra.h) {
+    if (event.offsetX > Ra.x && event.offsetX < Ra.x + Ra.w && event.offsetY > Ra.y && event.offsetY < Ra.y + Ra.h) {
         Ra.w = 45;
         Ra.h = 45;
         Ra.x = 52.5;
@@ -3805,7 +3813,7 @@ function draw_Ra() {
 }
 }
 function draw_Ac() {
-    if (event.clientX > Ac.x && event.clientX < Ac.x + Ac.w && event.clientY > Ac.y && event.clientY < Ac.y + Ac.h) {
+    if (event.offsetX > Ac.x && event.offsetX < Ac.x + Ac.w && event.offsetY > Ac.y && event.offsetY < Ac.y + Ac.h) {
         Ac.w = 45;
         Ac.h = 45;
         Ac.x = 97.5;
@@ -3835,7 +3843,7 @@ function draw_Ac() {
 }
 }
 function draw_Rf() {
-    if (event.clientX > Rf.x && event.clientX < Rf.x + Rf.w && event.clientY > Rf.y && event.clientY < Rf.y + Rf.h) {
+    if (event.offsetX > Rf.x && event.offsetX < Rf.x + Rf.w && event.offsetY > Rf.y && event.offsetY < Rf.y + Rf.h) {
         Rf.w = 45;
         Rf.h = 45;
         Rf.x = 142.5;
@@ -3865,7 +3873,7 @@ function draw_Rf() {
 }
 }
 function draw_Db() {
-    if (event.clientX > Db.x && event.clientX < Db.x + Db.w && event.clientY > Db.y && event.clientY < Db.y + Db.h) {
+    if (event.offsetX > Db.x && event.offsetX < Db.x + Db.w && event.offsetY > Db.y && event.offsetY < Db.y + Db.h) {
         Db.w = 45;
         Db.h = 45;
         Db.x = 187.5;
@@ -3895,7 +3903,7 @@ function draw_Db() {
 }
 }
 function draw_Sg() {
-    if (event.clientX > Sg.x && event.clientX < Sg.x + Sg.w && event.clientY > Sg.y && event.clientY < Sg.y + Sg.h) {
+    if (event.offsetX > Sg.x && event.offsetX < Sg.x + Sg.w && event.offsetY > Sg.y && event.offsetY < Sg.y + Sg.h) {
         Sg.w = 45;
         Sg.h = 45;
         Sg.x = 232.5;
@@ -3925,7 +3933,7 @@ function draw_Sg() {
 }
 }
 function draw_Bh() {
-    if (event.clientX > Bh.x && event.clientX < Bh.x + Bh.w && event.clientY > Bh.y && event.clientY < Bh.y + Bh.h) {
+    if (event.offsetX > Bh.x && event.offsetX < Bh.x + Bh.w && event.offsetY > Bh.y && event.offsetY < Bh.y + Bh.h) {
         Bh.w = 45;
         Bh.h = 45;
         Bh.x = 277.5;
@@ -3955,7 +3963,7 @@ function draw_Bh() {
 }
 }
 function draw_Hs() {
-    if (event.clientX > Hs.x && event.clientX < Hs.x + Hs.w && event.clientY > Hs.y && event.clientY < Hs.y + Hs.h) {
+    if (event.offsetX > Hs.x && event.offsetX < Hs.x + Hs.w && event.offsetY > Hs.y && event.offsetY < Hs.y + Hs.h) {
         Hs.w = 45;
         Hs.h = 45;
         Hs.x = 322.5;
@@ -3985,7 +3993,7 @@ function draw_Hs() {
 }
 }
 function draw_Mt() {
-    if (event.clientX > Mt.x && event.clientX < Mt.x + Mt.w && event.clientY > Mt.y && event.clientY < Mt.y + Mt.h) {
+    if (event.offsetX > Mt.x && event.offsetX < Mt.x + Mt.w && event.offsetY > Mt.y && event.offsetY < Mt.y + Mt.h) {
         Mt.w = 45;
         Mt.h = 45;
         Mt.x = 367.5;
@@ -4015,7 +4023,7 @@ function draw_Mt() {
 }
 }
 function draw_Ds() {
-    if (event.clientX > Ds.x && event.clientX < Ds.x + Ds.w && event.clientY > Ds.y && event.clientY < Ds.y + Ds.h) {
+    if (event.offsetX > Ds.x && event.offsetX < Ds.x + Ds.w && event.offsetY > Ds.y && event.offsetY < Ds.y + Ds.h) {
         Ds.w = 45;
         Ds.h = 45;
         Ds.x = 412.5;
@@ -4045,7 +4053,7 @@ function draw_Ds() {
 }
 }
 function draw_Rg() {
-    if (event.clientX > Rg.x && event.clientX < Rg.x + Rg.w && event.clientY > Rg.y && event.clientY < Rg.y + Rg.h) {
+    if (event.offsetX > Rg.x && event.offsetX < Rg.x + Rg.w && event.offsetY > Rg.y && event.offsetY < Rg.y + Rg.h) {
         Rg.w = 45;
         Rg.h = 45;
         Rg.x = 457.5;
@@ -4075,7 +4083,7 @@ function draw_Rg() {
 }
 }
 function draw_Cn() {
-    if (event.clientX > Cn.x && event.clientX < Cn.x + Cn.w && event.clientY > Cn.y && event.clientY < Cn.y + Cn.h) {
+    if (event.offsetX > Cn.x && event.offsetX < Cn.x + Cn.w && event.offsetY > Cn.y && event.offsetY < Cn.y + Cn.h) {
         Cn.w = 45;
         Cn.h = 45;
         Cn.x = 502.5;
@@ -4105,7 +4113,7 @@ function draw_Cn() {
 }
 }
 function draw_Nh() {
-    if (event.clientX > Nh.x && event.clientX < Nh.x + Nh.w && event.clientY > Nh.y && event.clientY < Nh.y + Nh.h) {
+    if (event.offsetX > Nh.x && event.offsetX < Nh.x + Nh.w && event.offsetY > Nh.y && event.offsetY < Nh.y + Nh.h) {
         Nh.w = 45;
         Nh.h = 45;
         Nh.x = 547.5;
@@ -4135,7 +4143,7 @@ function draw_Nh() {
 }
 }
 function draw_Fl() {
-    if (event.clientX > Fl.x && event.clientX < Fl.x + Fl.w && event.clientY > Fl.y && event.clientY < Fl.y + Fl.h) {
+    if (event.offsetX > Fl.x && event.offsetX < Fl.x + Fl.w && event.offsetY > Fl.y && event.offsetY < Fl.y + Fl.h) {
         Fl.w = 45;
         Fl.h = 45;
         Fl.x = 592.5;
@@ -4165,7 +4173,7 @@ function draw_Fl() {
 }
 }
 function draw_Mc() {
-    if (event.clientX > Mc.x && event.clientX < Mc.x + Mc.w && event.clientY > Mc.y && event.clientY < Mc.y + Mc.h) {
+    if (event.offsetX > Mc.x && event.offsetX < Mc.x + Mc.w && event.offsetY > Mc.y && event.offsetY < Mc.y + Mc.h) {
         Mc.w = 45;
         Mc.h = 45;
         Mc.x = 637.5;
@@ -4195,7 +4203,7 @@ function draw_Mc() {
 }
 }
 function draw_Lv() {
-    if (event.clientX > Lv.x && event.clientX < Lv.x + Lv.w && event.clientY > Lv.y && event.clientY < Lv.y + Lv.h) {
+    if (event.offsetX > Lv.x && event.offsetX < Lv.x + Lv.w && event.offsetY > Lv.y && event.offsetY < Lv.y + Lv.h) {
         Lv.w = 45;
         Lv.h = 45;
         Lv.x = 682.5;
@@ -4225,7 +4233,7 @@ function draw_Lv() {
 }
 }
 function draw_Ts() {
-    if (event.clientX > Ts.x && event.clientX < Ts.x + Ts.w && event.clientY > Ts.y && event.clientY < Ts.y + Ts.h) {
+    if (event.offsetX > Ts.x && event.offsetX < Ts.x + Ts.w && event.offsetY > Ts.y && event.offsetY < Ts.y + Ts.h) {
         Ts.w = 45;
         Ts.h = 45;
         Ts.x = 727.5;
@@ -4255,7 +4263,7 @@ function draw_Ts() {
 }
 }
 function draw_Og() {
-    if (event.clientX > Og.x && event.clientX < Og.x + Og.w && event.clientY > Og.y && event.clientY < Og.y + Og.h) {
+    if (event.offsetX > Og.x && event.offsetX < Og.x + Og.w && event.offsetY > Og.y && event.offsetY < Og.y + Og.h) {
         Og.w = 45;
         Og.h = 45;
         Og.x = 772.5;
@@ -4284,9 +4292,10 @@ function draw_Og() {
         ctx.fillText('118', Og.x + 8, Og.y + 10);
 }
 }
+
 //row 8
 function draw_Ce() {
-    if (event.clientX > Ce.x && event.clientX < Ce.x + Ce.w && event.clientY > Ce.y && event.clientY < Ce.y + Ce.h) {
+    if (event.offsetX > Ce.x && event.offsetX < Ce.x + Ce.w && event.offsetY > Ce.y && event.offsetY < Ce.y + Ce.h) {
         Ce.w = 45;
         Ce.h = 45;
         Ce.x = 142.5;
@@ -4316,7 +4325,7 @@ function draw_Ce() {
 }
 }
 function draw_Pr() {
-    if (event.clientX > Pr.x && event.clientX < Pr.x + Pr.w && event.clientY > Pr.y && event.clientY < Pr.y + Pr.h) {
+    if (event.offsetX > Pr.x && event.offsetX < Pr.x + Pr.w && event.offsetY > Pr.y && event.offsetY < Pr.y + Pr.h) {
         Pr.w = 45;
         Pr.h = 45;
         Pr.x = 187.5;
@@ -4346,7 +4355,7 @@ function draw_Pr() {
 }
 }
 function draw_Nd() {
-    if (event.clientX > Nd.x && event.clientX < Nd.x + Nd.w && event.clientY > Nd.y && event.clientY < Nd.y + Nd.h) {
+    if (event.offsetX > Nd.x && event.offsetX < Nd.x + Nd.w && event.offsetY > Nd.y && event.offsetY < Nd.y + Nd.h) {
         Nd.w = 45;
         Nd.h = 45;
         Nd.x = 232.5;
@@ -4376,7 +4385,7 @@ function draw_Nd() {
 }
 }
 function draw_Pm() {
-    if (event.clientX > Pm.x && event.clientX < Pm.x + Pm.w && event.clientY > Pm.y && event.clientY < Pm.y + Pm.h) {
+    if (event.offsetX > Pm.x && event.offsetX < Pm.x + Pm.w && event.offsetY > Pm.y && event.offsetY < Pm.y + Pm.h) {
         Pm.w = 45;
         Pm.h = 45;
         Pm.x = 277.5;
@@ -4406,7 +4415,7 @@ function draw_Pm() {
 }
 }
 function draw_Sm() {
-    if (event.clientX > Sm.x && event.clientX < Sm.x + Sm.w && event.clientY > Sm.y && event.clientY < Sm.y + Sm.h) {
+    if (event.offsetX > Sm.x && event.offsetX < Sm.x + Sm.w && event.offsetY > Sm.y && event.offsetY < Sm.y + Sm.h) {
         Sm.w = 45;
         Sm.h = 45;
         Sm.x = 322.5;
@@ -4436,7 +4445,7 @@ function draw_Sm() {
 }
 }
 function draw_Eu() {
-    if (event.clientX > Eu.x && event.clientX < Eu.x + Eu.w && event.clientY > Eu.y && event.clientY < Eu.y + Eu.h) {
+    if (event.offsetX > Eu.x && event.offsetX < Eu.x + Eu.w && event.offsetY > Eu.y && event.offsetY < Eu.y + Eu.h) {
         Eu.w = 45;
         Eu.h = 45;
         Eu.x = 367.5;
@@ -4466,7 +4475,7 @@ function draw_Eu() {
 }
 }
 function draw_Gd() {
-    if (event.clientX > Gd.x && event.clientX < Gd.x + Gd.w && event.clientY > Gd.y && event.clientY < Gd.y + Gd.h) {
+    if (event.offsetX > Gd.x && event.offsetX < Gd.x + Gd.w && event.offsetY > Gd.y && event.offsetY < Gd.y + Gd.h) {
         Gd.w = 45;
         Gd.h = 45;
         Gd.x = 412.5;
@@ -4496,7 +4505,7 @@ function draw_Gd() {
 }
 }
 function draw_Tb() {
-    if (event.clientX > Tb.x && event.clientX < Tb.x + Tb.w && event.clientY > Tb.y && event.clientY < Tb.y + Tb.h) {
+    if (event.offsetX > Tb.x && event.offsetX < Tb.x + Tb.w && event.offsetY > Tb.y && event.offsetY < Tb.y + Tb.h) {
         Tb.w = 45;
         Tb.h = 45;
         Tb.x = 457.5;
@@ -4526,7 +4535,7 @@ function draw_Tb() {
 }
 }
 function draw_Dy() {
-    if (event.clientX > Dy.x && event.clientX < Dy.x + Dy.w && event.clientY > Dy.y && event.clientY < Dy.y + Dy.h) {
+    if (event.offsetX > Dy.x && event.offsetX < Dy.x + Dy.w && event.offsetY > Dy.y && event.offsetY < Dy.y + Dy.h) {
         Dy.w = 45;
         Dy.h = 45;
         Dy.x = 502.5;
@@ -4556,7 +4565,7 @@ function draw_Dy() {
 }
 }
 function draw_Ho() {
-    if (event.clientX > Ho.x && event.clientX < Ho.x + Ho.w && event.clientY > Ho.y && event.clientY < Ho.y + Ho.h) {
+    if (event.offsetX > Ho.x && event.offsetX < Ho.x + Ho.w && event.offsetY > Ho.y && event.offsetY < Ho.y + Ho.h) {
         Ho.w = 45;
         Ho.h = 45;
         Ho.x = 547.5;
@@ -4586,7 +4595,7 @@ function draw_Ho() {
 }
 }
 function draw_Er() {
-    if (event.clientX > Er.x && event.clientX < Er.x + Er.w && event.clientY > Er.y && event.clientY < Er.y + Er.h) {
+    if (event.offsetX > Er.x && event.offsetX < Er.x + Er.w && event.offsetY > Er.y && event.offsetY < Er.y + Er.h) {
         Er.w = 45;
         Er.h = 45;
         Er.x = 592.5;
@@ -4616,7 +4625,7 @@ function draw_Er() {
 }
 }
 function draw_Tm() {
-    if (event.clientX > Tm.x && event.clientX < Tm.x + Tm.w && event.clientY > Tm.y && event.clientY < Tm.y + Tm.h) {
+    if (event.offsetX > Tm.x && event.offsetX < Tm.x + Tm.w && event.offsetY > Tm.y && event.offsetY < Tm.y + Tm.h) {
         Tm.w = 45;
         Tm.h = 45;
         Tm.x = 637.5;
@@ -4646,7 +4655,7 @@ function draw_Tm() {
 }
 }
 function draw_Yb() {
-    if (event.clientX > Yb.x && event.clientX < Yb.x + Yb.w && event.clientY > Yb.y && event.clientY < Yb.y + Yb.h) {
+    if (event.offsetX > Yb.x && event.offsetX < Yb.x + Yb.w && event.offsetY > Yb.y && event.offsetY < Yb.y + Yb.h) {
         Yb.w = 45;
         Yb.h = 45;
         Yb.x = 682.5;
@@ -4676,7 +4685,7 @@ function draw_Yb() {
 }
 }
 function draw_Lu() {
-    if (event.clientX > Lu.x && event.clientX < Lu.x + Lu.w && event.clientY > Lu.y && event.clientY < Lu.y + Lu.h) {
+    if (event.offsetX > Lu.x && event.offsetX < Lu.x + Lu.w && event.offsetY > Lu.y && event.offsetY < Lu.y + Lu.h) {
         Lu.w = 45;
         Lu.h = 45;
         Lu.x = 727.5;
@@ -4705,9 +4714,10 @@ function draw_Lu() {
         ctx.fillText('71', Lu.x + 6, Lu.y + 10);
 }
 }
+
 //row 9
 function draw_Th() {
-    if (event.clientX > Th.x && event.clientX < Th.x + Th.w && event.clientY > Th.y && event.clientY < Th.y + Th.h) {
+    if (event.offsetX > Th.x && event.offsetX < Th.x + Th.w && event.offsetY > Th.y && event.offsetY < Th.y + Th.h) {
         Th.w = 45;
         Th.h = 45;
         Th.x = 142.5;
@@ -4737,7 +4747,7 @@ function draw_Th() {
 }
 }
 function draw_Pa() {
-    if (event.clientX > Pa.x && event.clientX < Pa.x + Pa.w && event.clientY > Pa.y && event.clientY < Pa.y + Pa.h) {
+    if (event.offsetX > Pa.x && event.offsetX < Pa.x + Pa.w && event.offsetY > Pa.y && event.offsetY < Pa.y + Pa.h) {
         Pa.w = 45;
         Pa.h = 45;
         Pa.x = 187.5;
@@ -4767,7 +4777,7 @@ function draw_Pa() {
 }
 }
 function draw_U() {
-    if (event.clientX > U.x && event.clientX < U.x + U.w && event.clientY > U.y && event.clientY < U.y + U.h) {
+    if (event.offsetX > U.x && event.offsetX < U.x + U.w && event.offsetY > U.y && event.offsetY < U.y + U.h) {
         U.w = 45;
         U.h = 45;
         U.x = 232.5;
@@ -4797,7 +4807,7 @@ function draw_U() {
 }
 }
 function draw_Np() {
-    if (event.clientX > Np.x && event.clientX < Np.x + Np.w && event.clientY > Np.y && event.clientY < Np.y + Np.h) {
+    if (event.offsetX > Np.x && event.offsetX < Np.x + Np.w && event.offsetY > Np.y && event.offsetY < Np.y + Np.h) {
         Np.w = 45;
         Np.h = 45;
         Np.x = 277.5;
@@ -4827,7 +4837,7 @@ function draw_Np() {
 }
 }
 function draw_Pu() {
-    if (event.clientX > Pu.x && event.clientX < Pu.x + Pu.w && event.clientY > Pu.y && event.clientY < Pu.y + Pu.h) {
+    if (event.offsetX > Pu.x && event.offsetX < Pu.x + Pu.w && event.offsetY > Pu.y && event.offsetY < Pu.y + Pu.h) {
         Pu.w = 45;
         Pu.h = 45;
         Pu.x = 322.5;
@@ -4857,7 +4867,7 @@ function draw_Pu() {
 }
 }
 function draw_Am() {
-    if (event.clientX > Am.x && event.clientX < Am.x + Am.w && event.clientY > Am.y && event.clientY < Am.y + Am.h) {
+    if (event.offsetX > Am.x && event.offsetX < Am.x + Am.w && event.offsetY > Am.y && event.offsetY < Am.y + Am.h) {
         Am.w = 45;
         Am.h = 45;
         Am.x = 367.5;
@@ -4887,7 +4897,7 @@ function draw_Am() {
 }
 }
 function draw_Cm() {
-    if (event.clientX > Cm.x && event.clientX < Cm.x + Cm.w && event.clientY > Cm.y && event.clientY < Cm.y + Cm.h) {
+    if (event.offsetX > Cm.x && event.offsetX < Cm.x + Cm.w && event.offsetY > Cm.y && event.offsetY < Cm.y + Cm.h) {
         Cm.w = 45;
         Cm.h = 45;
         Cm.x = 412.5;
@@ -4917,7 +4927,7 @@ function draw_Cm() {
 }
 }
 function draw_Bk() {
-    if (event.clientX > Bk.x && event.clientX < Bk.x + Bk.w && event.clientY > Bk.y && event.clientY < Bk.y + Bk.h) {
+    if (event.offsetX > Bk.x && event.offsetX < Bk.x + Bk.w && event.offsetY > Bk.y && event.offsetY < Bk.y + Bk.h) {
         Bk.w = 45;
         Bk.h = 45;
         Bk.x = 457.5;
@@ -4947,7 +4957,7 @@ function draw_Bk() {
 }
 }
 function draw_Cf() {
-    if (event.clientX > Cf.x && event.clientX < Cf.x + Cf.w && event.clientY > Cf.y && event.clientY < Cf.y + Cf.h) {
+    if (event.offsetX > Cf.x && event.offsetX < Cf.x + Cf.w && event.offsetY > Cf.y && event.offsetY < Cf.y + Cf.h) {
         Cf.w = 45;
         Cf.h = 45;
         Cf.x = 502.5;
@@ -4977,7 +4987,7 @@ function draw_Cf() {
 }
 }
 function draw_Es() {
-    if (event.clientX > Es.x && event.clientX < Es.x + Es.w && event.clientY > Es.y && event.clientY < Es.y + Es.h) {
+    if (event.offsetX > Es.x && event.offsetX < Es.x + Es.w && event.offsetY > Es.y && event.offsetY < Es.y + Es.h) {
         Es.w = 45;
         Es.h = 45;
         Es.x = 547.5;
@@ -5007,7 +5017,7 @@ function draw_Es() {
 }
 }
 function draw_Fm() {
-    if (event.clientX > Fm.x && event.clientX < Fm.x + Fm.w && event.clientY > Fm.y && event.clientY < Fm.y + Fm.h) {
+    if (event.offsetX > Fm.x && event.offsetX < Fm.x + Fm.w && event.offsetY > Fm.y && event.offsetY < Fm.y + Fm.h) {
         Fm.w = 45;
         Fm.h = 45;
         Fm.x = 592.5;
@@ -5037,7 +5047,7 @@ function draw_Fm() {
 }
 }
 function draw_Md() {
-    if (event.clientX > Md.x && event.clientX < Md.x + Md.w && event.clientY > Md.y && event.clientY < Md.y + Md.h) {
+    if (event.offsetX > Md.x && event.offsetX < Md.x + Md.w && event.offsetY > Md.y && event.offsetY < Md.y + Md.h) {
         Md.w = 45;
         Md.h = 45;
         Md.x = 637.5;
@@ -5067,7 +5077,7 @@ function draw_Md() {
 }
 }
 function draw_No() {
-    if (event.clientX > No.x && event.clientX < No.x + No.w && event.clientY > No.y && event.clientY < No.y + No.h) {
+    if (event.offsetX > No.x && event.offsetX < No.x + No.w && event.offsetY > No.y && event.offsetY < No.y + No.h) {
         No.w = 45;
         No.h = 45;
         No.x = 682.5;
@@ -5097,7 +5107,7 @@ function draw_No() {
 }
 }
 function draw_Lr() {
-    if (event.clientX > Lr.x && event.clientX < Lr.x + Lr.w && event.clientY > Lr.y && event.clientY < Lr.y + Lr.h) {
+    if (event.offsetX > Lr.x && event.offsetX < Lr.x + Lr.w && event.offsetY > Lr.y && event.offsetY < Lr.y + Lr.h) {
         Lr.w = 45;
         Lr.h = 45;
         Lr.x = 727.5;
@@ -5256,566 +5266,561 @@ addEventListener('mousemove', function() {
     draw_Md();
     draw_No();
     draw_Lr();
-
-    
-
 });
 
 addEventListener('click', function() {
-    if (event.clientX > H.x && event.clientX < H.x + H.w && event.clientY > H.y && event.clientY < H.y + H.h){
+    if (event.offsetX > H.x && event.offsetX < H.x + H.w && event.offsetY > H.y && event.offsetY < H.y + H.h){
         console.log('clicked H');
         displayInfo(elementsObj[1]);
-        
     }
-        if (event.clientX > He.x && event.clientX < He.x + He.w && event.clientY > He.y && event.clientY < He.y + He.h){
+        if (event.offsetX > He.x && event.offsetX < He.x + He.w && event.offsetY > He.y && event.offsetY < He.y + He.h){
         console.log('clicked He');
         displayInfo(elementsObj[2]);
-
     }
+
     //row 2
-    if (event.clientX > Li.x && event.clientX < Li.x + Li.w && event.clientY > Li.y && event.clientY < Li.y + Li.h){
+    if (event.offsetX > Li.x && event.offsetX < Li.x + Li.w && event.offsetY > Li.y && event.offsetY < Li.y + Li.h){
         console.log('clicked Li');
         displayInfo(elementsObj[3]);
-
     }
-        if (event.clientX > Be.x && event.clientX < Be.x + Be.w && event.clientY > Be.y && event.clientY < Be.y + Be.h){
+        if (event.offsetX > Be.x && event.offsetX < Be.x + Be.w && event.offsetY > Be.y && event.offsetY < Be.y + Be.h){
         console.log('clicked Be'); 
         displayInfo(elementsObj[4]);
-
     }
-        if (event.clientX > B.x && event.clientX < B.x + B.w && event.clientY > B.y && event.clientY < B.y + B.h){
+        if (event.offsetX > B.x && event.offsetX < B.x + B.w && event.offsetY > B.y && event.offsetY < B.y + B.h){
         console.log('clicked B');
         displayInfo(elementsObj[5]);
-
     }
-        if (event.clientX > C.x && event.clientX < C.x + C.w && event.clientY > C.y && event.clientY < C.y + C.h){
+        if (event.offsetX > C.x && event.offsetX < C.x + C.w && event.offsetY > C.y && event.offsetY < C.y + C.h){
         console.log('clicked C');
         displayInfo(elementsObj[6]);
 
     }
-        if (event.clientX > N.x && event.clientX < N.x + N.w && event.clientY > N.y && event.clientY < N.y + N.h){
+        if (event.offsetX > N.x && event.offsetX < N.x + N.w && event.offsetY > N.y && event.offsetY < N.y + N.h){
         console.log('clicked N');
         displayInfo(elementsObj[7]);
 
     }
-        if (event.clientX > O.x && event.clientX < O.x + O.w && event.clientY > O.y && event.clientY < O.y + O.h){
+        if (event.offsetX > O.x && event.offsetX < O.x + O.w && event.offsetY > O.y && event.offsetY < O.y + O.h){
         console.log('clicked O');
         displayInfo(elementsObj[8]);
 
+
     }   
-        if (event.clientX > F.x && event.clientX < F.x + F.w && event.clientY > F.y && event.clientY < F.y + F.h){
+        if (event.offsetX > F.x && event.offsetX < F.x + F.w && event.offsetY > F.y && event.offsetY < F.y + F.h){
         console.log('clicked F');
         displayInfo(elementsObj[9]);
 
     }
-        if (event.clientX > Ne.x && event.clientX < Ne.x + Ne.w && event.clientY > Ne.y && event.clientY < Ne.y + Ne.h){
+        if (event.offsetX > Ne.x && event.offsetX < Ne.x + Ne.w && event.offsetY > Ne.y && event.offsetY < Ne.y + Ne.h){
         console.log('clicked Ne');
         displayInfo(elementsObj[10]);
 
     }
+
     //row 3
-    if (event.clientX > Na.x && event.clientX < Na.x + Na.w && event.clientY > Na.y && event.clientY < Na.y + Na.h){
+    if (event.offsetX > Na.x && event.offsetX < Na.x + Na.w && event.offsetY > Na.y && event.offsetY < Na.y + Na.h){
         console.log('clicked Na');
         displayInfo(elementsObj[11]);
 
     }
-        if (event.clientX > Mg.x && event.clientX < Mg.x + Mg.w && event.clientY > Mg.y && event.clientY < Mg.y + Mg.h){
+        if (event.offsetX > Mg.x && event.offsetX < Mg.x + Mg.w && event.offsetY > Mg.y && event.offsetY < Mg.y + Mg.h){
         console.log('clicked Mg');
         displayInfo(elementsObj[12]);
-
-
     }
-        if (event.clientX > Al.x && event.clientX < Al.x + Al.w && event.clientY > Al.y && event.clientY < Al.y + Al.h){
+        if (event.offsetX > Al.x && event.offsetX < Al.x + Al.w && event.offsetY > Al.y && event.offsetY < Al.y + Al.h){
         console.log('clicked Al');
         displayInfo(elementsObj[13]);
-
     }
-        if (event.clientX > Si.x && event.clientX < Si.x + Si.w && event.clientY > Si.y && event.clientY < Si.y + Si.h){    
+        if (event.offsetX > Si.x && event.offsetX < Si.x + Si.w && event.offsetY > Si.y && event.offsetY < Si.y + Si.h){    
         console.log('clicked Si');
         displayInfo(elementsObj[14]);
-
     }
-        if (event.clientX > P.x && event.clientX < P.x + P.w && event.clientY > P.y && event.clientY < P.y + P.h){
+        if (event.offsetX > P.x && event.offsetX < P.x + P.w && event.offsetY > P.y && event.offsetY < P.y + P.h){
         console.log('clicked P');
         displayInfo(elementsObj[15]);
 
     }
-        if (event.clientX > S.x && event.clientX < S.x + S.w && event.clientY > S.y && event.clientY < S.y + S.h){
+        if (event.offsetX > S.x && event.offsetX < S.x + S.w && event.offsetY > S.y && event.offsetY < S.y + S.h){
         console.log('clicked S');
         displayInfo(elementsObj[16]);
 
     }
-        if (event.clientX > Cl.x && event.clientX < Cl.x + Cl.w && event.clientY > Cl.y && event.clientY < Cl.y + Cl.h){
+        if (event.offsetX > Cl.x && event.offsetX < Cl.x + Cl.w && event.offsetY > Cl.y && event.offsetY < Cl.y + Cl.h){
         console.log('clicked Cl');
         displayInfo(elementsObj[17]);
-
     }
-        if (event.clientX > Ar.x && event.clientX < Ar.x + Ar.w && event.clientY > Ar.y && event.clientY < Ar.y + Ar.h){
+        if (event.offsetX > Ar.x && event.offsetX < Ar.x + Ar.w && event.offsetY > Ar.y && event.offsetY < Ar.y + Ar.h){
         console.log('clicked Ar');
         displayInfo(elementsObj[18]);
 
     }
+
     //row 4
-        if (event.clientX > K.x && event.clientX < K.x + K.w && event.clientY > K.y && event.clientY < K.y + K.h){
+        if (event.offsetX > K.x && event.offsetX < K.x + K.w && event.offsetY > K.y && event.offsetY < K.y + K.h){
         console.log('clicked K');
         displayInfo(elementsObj[19]);
-
     }
-        if (event.clientX > Ca.x && event.clientX < Ca.x + Ca.w && event.clientY > Ca.y && event.clientY < Ca.y + Ca.h){
+        if (event.offsetX > Ca.x && event.offsetX < Ca.x + Ca.w && event.offsetY > Ca.y && event.offsetY < Ca.y + Ca.h){
         console.log('clicked Ca');
         displayInfo(elementsObj[20]);
 
     }
-        if (event.clientX > Sc.x && event.clientX < Sc.x + Sc.w && event.clientY > Sc.y && event.clientY < Sc.y + Sc.h){
+        if (event.offsetX > Sc.x && event.offsetX < Sc.x + Sc.w && event.offsetY > Sc.y && event.offsetY < Sc.y + Sc.h){
         console.log('clicked Sc');
         displayInfo(elementsObj[21]);
-
     }
-        if (event.clientX > Ti.x && event.clientX < Ti.x + Ti.w && event.clientY > Ti.y && event.clientY < Ti.y + Ti.h){
+        if (event.offsetX > Ti.x && event.offsetX < Ti.x + Ti.w && event.offsetY > Ti.y && event.offsetY < Ti.y + Ti.h){
         console.log('clicked Ti');
         displayInfo(elementsObj[22]);
-    
     }
-        if (event.clientX > V.x && event.clientX < V.x + V.w && event.clientY > V.y && event.clientY < V.y + V.h){
+        if (event.offsetX > V.x && event.offsetX < V.x + V.w && event.offsetY > V.y && event.offsetY < V.y + V.h){
         console.log('clicked V');
         displayInfo(elementsObj[23]);
+
     }
-        if (event.clientX > Cr.x && event.clientX < Cr.x + Cr.w && event.clientY > Cr.y && event.clientY < Cr.y + Cr.h){
+        if (event.offsetX > Cr.x && event.offsetX < Cr.x + Cr.w && event.offsetY > Cr.y && event.offsetY < Cr.y + Cr.h){
         console.log('clicked Cr');
         displayInfo(elementsObj[24]);
+
     }
-        if (event.clientX > Mn.x && event.clientX < Mn.x + Mn.w && event.clientY > Mn.y && event.clientY < Mn.y + Mn.h){
+        if (event.offsetX > Mn.x && event.offsetX < Mn.x + Mn.w && event.offsetY > Mn.y && event.offsetY < Mn.y + Mn.h){
         console.log('clicked Mn');
         displayInfo(elementsObj[25]);
     }
-        if (event.clientX > Fe.x && event.clientX < Fe.x + Fe.w && event.clientY > Fe.y && event.clientY < Fe.y + Fe.h){
+        if (event.offsetX > Fe.x && event.offsetX < Fe.x + Fe.w && event.offsetY > Fe.y && event.offsetY < Fe.y + Fe.h){
         console.log('clicked Fe');
         displayInfo(elementsObj[26]);
     }
-        if (event.clientX > Co.x && event.clientX < Co.x + Co.w && event.clientY > Co.y && event.clientY < Co.y + Co.h){
+        if (event.offsetX > Co.x && event.offsetX < Co.x + Co.w && event.offsetY > Co.y && event.offsetY < Co.y + Co.h){
         console.log('clicked Co');
         displayInfo(elementsObj[27]);
+
     }
-        if (event.clientX > Ni.x && event.clientX < Ni.x + Ni.w && event.clientY > Ni.y && event.clientY < Ni.y + Ni.h){
+        if (event.offsetX > Ni.x && event.offsetX < Ni.x + Ni.w && event.offsetY > Ni.y && event.offsetY < Ni.y + Ni.h){
         console.log('clicked Ni');
         displayInfo(elementsObj[28]);
 
     }
-        if (event.clientX > Cu.x && event.clientX < Cu.x + Cu.w && event.clientY > Cu.y && event.clientY < Cu.y + Cu.h){
+        if (event.offsetX > Cu.x && event.offsetX < Cu.x + Cu.w && event.offsetY > Cu.y && event.offsetY < Cu.y + Cu.h){
         console.log('clicked Cu');
         displayInfo(elementsObj[29]);
 
     }
-        if (event.clientX > Zn.x && event.clientX < Zn.x + Zn.w && event.clientY > Zn.y && event.clientY < Zn.y + Zn.h){
+        if (event.offsetX > Zn.x && event.offsetX < Zn.x + Zn.w && event.offsetY > Zn.y && event.offsetY < Zn.y + Zn.h){
         console.log('clicked Zn');
         displayInfo(elementsObj[30]);
-
     }
-        if (event.clientX > Ga.x && event.clientX < Ga.x + Ga.w && event.clientY > Ga.y && event.clientY < Ga.y + Ga.h){
+        if (event.offsetX > Ga.x && event.offsetX < Ga.x + Ga.w && event.offsetY > Ga.y && event.offsetY < Ga.y + Ga.h){
         console.log('clicked Ga');
         displayInfo(elementsObj[31]);
-
     }
-        if (event.clientX > Ge.x && event.clientX < Ge.x + Ge.w && event.clientY > Ge.y && event.clientY < Ge.y + Ge.h){
+        if (event.offsetX > Ge.x && event.offsetX < Ge.x + Ge.w && event.offsetY > Ge.y && event.offsetY < Ge.y + Ge.h){
         console.log('clicked Ge');
         displayInfo(elementsObj[32]);
 
     }       
-        if (event.clientX > As.x && event.clientX < As.x + As.w && event.clientY > As.y && event.clientY < As.y + As.h){
+        if (event.offsetX > As.x && event.offsetX < As.x + As.w && event.offsetY > As.y && event.offsetY < As.y + As.h){
         console.log('clicked As');
         displayInfo(elementsObj[33]);
 
     }
-        if (event.clientX > Se.x && event.clientX < Se.x + Se.w && event.clientY > Se.y && event.clientY < Se.y + Se.h){
+        if (event.offsetX > Se.x && event.offsetX < Se.x + Se.w && event.offsetY > Se.y && event.offsetY < Se.y + Se.h){
         console.log('clicked Se');
         displayInfo(elementsObj[34]);
 
     }
-        if (event.clientX > Br.x && event.clientX < Br.x + Br.w && event.clientY > Br.y && event.clientY < Br.y + Br.h){
+        if (event.offsetX > Br.x && event.offsetX < Br.x + Br.w && event.offsetY > Br.y && event.offsetY < Br.y + Br.h){
         console.log('clicked Br');
         displayInfo(elementsObj[35]);
 
     }
-        if (event.clientX > Kr.x && event.clientX < Kr.x + Kr.w && event.clientY > Kr.y && event.clientY < Kr.y + Kr.h){
+        if (event.offsetX > Kr.x && event.offsetX < Kr.x + Kr.w && event.offsetY > Kr.y && event.offsetY < Kr.y + Kr.h){
         console.log('clicked Kr');
         displayInfo(elementsObj[36]);
 
     }
+
     //row 5
-            if (event.clientX > Rb.x && event.clientX < Rb.x + Rb.w && event.clientY > Rb.y && event.clientY < Rb.y + Rb.h){
+            if (event.offsetX > Rb.x && event.offsetX < Rb.x + Rb.w && event.offsetY > Rb.y && event.offsetY < Rb.y + Rb.h){
         console.log('clicked Rb');
         displayInfo(elementsObj[37]);
-
     }
-        if (event.clientX > Sr.x && event.clientX < Sr.x + Sr.w && event.clientY > Sr.y && event.clientY < Sr.y + Sr.h){
+        if (event.offsetX > Sr.x && event.offsetX < Sr.x + Sr.w && event.offsetY > Sr.y && event.offsetY < Sr.y + Sr.h){
         console.log('clicked Sr');
         displayInfo(elementsObj[38]);
 
     }
-        if (event.clientX > Y.x && event.clientX < Y.x + Y.w && event.clientY > Y.y && event.clientY < Y.y + Y.h){
+        if (event.offsetX > Y.x && event.offsetX < Y.x + Y.w && event.offsetY > Y.y && event.offsetY < Y.y + Y.h){
         console.log('clicked Y');
         displayInfo(elementsObj[39]);
-
     }
-        if (event.clientX > Zr.x && event.clientX < Zr.x + Zr.w && event.clientY > Zr.y && event.clientY < Zr.y + Zr.h){
+        if (event.offsetX > Zr.x && event.offsetX < Zr.x + Zr.w && event.offsetY > Zr.y && event.offsetY < Zr.y + Zr.h){
         console.log('clicked Zr');
         displayInfo(elementsObj[40]);
-
     }
-        if (event.clientX > Nb.x && event.clientX < Nb.x + Nb.w && event.clientY > Nb.y && event.clientY < Nb.y + Nb.h){
+        if (event.offsetX > Nb.x && event.offsetX < Nb.x + Nb.w && event.offsetY > Nb.y && event.offsetY < Nb.y + Nb.h){
         console.log('clicked Nb');
         displayInfo(elementsObj[41]);
-
     }
-        if (event.clientX > Mo.x && event.clientX < Mo.x + Mo.w && event.clientY > Mo.y && event.clientY < Mo.y + Mo.h){
+        if (event.offsetX > Mo.x && event.offsetX < Mo.x + Mo.w && event.offsetY > Mo.y && event.offsetY < Mo.y + Mo.h){
         console.log('clicked Mo');
         displayInfo(elementsObj[42]);
 
     }
-        if (event.clientX > Tc.x && event.clientX < Tc.x + Tc.w && event.clientY > Tc.y && event.clientY < Tc.y + Tc.h){
+        if (event.offsetX > Tc.x && event.offsetX < Tc.x + Tc.w && event.offsetY > Tc.y && event.offsetY < Tc.y + Tc.h){
         console.log('clicked Tc');
         displayInfo(elementsObj[43]);
 
     }
-        if (event.clientX > Ru.x && event.clientX < Ru.x + Ru.w && event.clientY > Ru.y && event.clientY < Ru.y + Ru.h){
+        if (event.offsetX > Ru.x && event.offsetX < Ru.x + Ru.w && event.offsetY > Ru.y && event.offsetY < Ru.y + Ru.h){
         console.log('clicked Ru');
         displayInfo(elementsObj[44]);
 
     }
-        if (event.clientX > Rh.x && event.clientX < Rh.x + Rh.w && event.clientY > Rh.y && event.clientY < Rh.y + Rh.h){
+        if (event.offsetX > Rh.x && event.offsetX < Rh.x + Rh.w && event.offsetY > Rh.y && event.offsetY < Rh.y + Rh.h){
         console.log('clicked Rh');
         displayInfo(elementsObj[45]);
-
     }
-        if (event.clientX > Pd.x && event.clientX < Pd.x + Pd.w && event.clientY > Pd.y && event.clientY < Pd.y + Pd.h){
+        if (event.offsetX > Pd.x && event.offsetX < Pd.x + Pd.w && event.offsetY > Pd.y && event.offsetY < Pd.y + Pd.h){
         console.log('clicked Pd');
         displayInfo(elementsObj[46]);
 
     }
-        if (event.clientX > Ag.x && event.clientX < Ag.x + Ag.w && event.clientY > Ag.y && event.clientY < Ag.y + Ag.h){
+        if (event.offsetX > Ag.x && event.offsetX < Ag.x + Ag.w && event.offsetY > Ag.y && event.offsetY < Ag.y + Ag.h){
         console.log('clicked Ag');
         displayInfo(elementsObj[47]);
 
     }
-        if (event.clientX > Cd.x && event.clientX < Cd.x + Cd.w && event.clientY > Cd.y && event.clientY < Cd.y + Cd.h){
+        if (event.offsetX > Cd.x && event.offsetX < Cd.x + Cd.w && event.offsetY > Cd.y && event.offsetY < Cd.y + Cd.h){
         console.log('clicked Cd');
         displayInfo(elementsObj[48]);
 
     }
-        if (event.clientX > In.x && event.clientX < In.x + In.w && event.clientY > In.y && event.clientY < In.y + In.h){
+        if (event.offsetX > In.x && event.offsetX < In.x + In.w && event.offsetY > In.y && event.offsetY < In.y + In.h){
         console.log('clicked In');
         displayInfo(elementsObj[49]);
-
     }
-        if (event.clientX > Sn.x && event.clientX < Sn.x + Sn.w && event.clientY > Sn.y && event.clientY < Sn.y + Sn.h){
+        if (event.offsetX > Sn.x && event.offsetX < Sn.x + Sn.w && event.offsetY > Sn.y && event.offsetY < Sn.y + Sn.h){
         console.log('clicked Sn');
         displayInfo(elementsObj[50]);
-
     }
-        if (event.clientX > Sb.x && event.clientX < Sb.x + Sb.w && event.clientY > Sb.y && event.clientY < Sb.y + Sb.h){
+        if (event.offsetX > Sb.x && event.offsetX < Sb.x + Sb.w && event.offsetY > Sb.y && event.offsetY < Sb.y + Sb.h){
         console.log('clicked Sb');
         displayInfo(elementsObj[51]);
-
     }
-        if (event.clientX > Te.x && event.clientX < Te.x + Te.w && event.clientY > Te.y && event.clientY < Te.y + Te.h){
+        if (event.offsetX > Te.x && event.offsetX < Te.x + Te.w && event.offsetY > Te.y && event.offsetY < Te.y + Te.h){
         console.log('clicked Te');
         displayInfo(elementsObj[52]);
-
     }       
-        if (event.clientX > I.x && event.clientX < I.x + I.w && event.clientY > I.y && event.clientY < I.y + I.h){
+        if (event.offsetX > I.x && event.offsetX < I.x + I.w && event.offsetY > I.y && event.offsetY < I.y + I.h){
         console.log('clicked I');
         displayInfo(elementsObj[53]);
-
     }
-        if (event.clientX > Xe.x && event.clientX < Xe.x + Xe.w && event.clientY > Xe.y && event.clientY < Xe.y + Xe.h){
+        if (event.offsetX > Xe.x && event.offsetX < Xe.x + Xe.w && event.offsetY > Xe.y && event.offsetY < Xe.y + Xe.h){
         console.log('clicked Xe');
         displayInfo(elementsObj[54]);
+
     }
-        if (event.clientX > Cs.x && event.clientX < Cs.x + Cs.w && event.clientY > Cs.y && event.clientY < Cs.y + Cs.h){
+        if (event.offsetX > Cs.x && event.offsetX < Cs.x + Cs.w && event.offsetY > Cs.y && event.offsetY < Cs.y + Cs.h){
         console.log('clicked Cs');
         displayInfo(elementsObj[55]);
+
     }
-        if (event.clientX > Ba.x && event.clientX < Ba.x + Ba.w && event.clientY > Ba.y && event.clientY < Ba.y + Ba.h){
+        if (event.offsetX > Ba.x && event.offsetX < Ba.x + Ba.w && event.offsetY > Ba.y && event.offsetY < Ba.y + Ba.h){
         console.log('clicked Ba');
         displayInfo(elementsObj[56]);
+
     }
-        if (event.clientX > La.x && event.clientX < La.x + La.w && event.clientY > La.y && event.clientY < La.y + La.h){
+        if (event.offsetX > La.x && event.offsetX < La.x + La.w && event.offsetY > La.y && event.offsetY < La.y + La.h){
         console.log('clicked La');
         displayInfo(elementsObj[57]);
 
     }
-        if (event.clientX > Hf.x && event.clientX < Hf.x + Hf.w && event.clientY > Hf.y && event.clientY < Hf.y + Hf.h){
+        if (event.offsetX > Hf.x && event.offsetX < Hf.x + Hf.w && event.offsetY > Hf.y && event.offsetY < Hf.y + Hf.h){
         console.log('clicked Hf');
-        displayInfo(elementsObj[72]);
+        displayInfo(elementsObj[72])
+
     }
-        if (event.clientX > Ta.x && event.clientX < Ta.x + Ta.w && event.clientY > Ta.y && event.clientY < Ta.y + Ta.h){
+        if (event.offsetX > Ta.x && event.offsetX < Ta.x + Ta.w && event.offsetY > Ta.y && event.offsetY < Ta.y + Ta.h){
         console.log('clicked Ta');
         displayInfo(elementsObj[73]);
+
     }
-        if (event.clientX > W.x && event.clientX < W.x + W.w && event.clientY > W.y && event.clientY < W.y + W.h){
+        if (event.offsetX > W.x && event.offsetX < W.x + W.w && event.offsetY > W.y && event.offsetY < W.y + W.h){
         console.log('clicked W');
         displayInfo(elementsObj[74]);
     }
-        if (event.clientX > Re.x && event.clientX < Re.x + Re.w && event.clientY > Re.y && event.clientY < Re.y + Re.h){
+        if (event.offsetX > Re.x && event.offsetX < Re.x + Re.w && event.offsetY > Re.y && event.offsetY < Re.y + Re.h){
         console.log('clicked Re');
         displayInfo(elementsObj[75]);
     }
-        if (event.clientX > Os.x && event.clientX < Os.x + Os.w && event.clientY > Os.y && event.clientY < Os.y + Os.h){
+        if (event.offsetX > Os.x && event.offsetX < Os.x + Os.w && event.offsetY > Os.y && event.offsetY < Os.y + Os.h){
         console.log('clicked Os');
         displayInfo(elementsObj[76]);
     }
-        if (event.clientX > Ir.x && event.clientX < Ir.x + Ir.w && event.clientY > Ir.y && event.clientY < Ir.y + Ir.h){
+        if (event.offsetX > Ir.x && event.offsetX < Ir.x + Ir.w && event.offsetY > Ir.y && event.offsetY < Ir.y + Ir.h){
         console.log('clicked Ir');
         displayInfo(elementsObj[77]);
+
     }
-        if (event.clientX > Pt.x && event.clientX < Pt.x + Pt.w && event.clientY > Pt.y && event.clientY < Pt.y + Pt.h){
+        if (event.offsetX > Pt.x && event.offsetX < Pt.x + Pt.w && event.offsetY > Pt.y && event.offsetY < Pt.y + Pt.h){
         console.log('clicked Pt');
         displayInfo(elementsObj[78]);
+
     }
-        if (event.clientX > Au.x && event.clientX < Au.x + Au.w && event.clientY > Au.y && event.clientY < Au.y + Au.h){
+        if (event.offsetX > Au.x && event.offsetX < Au.x + Au.w && event.offsetY > Au.y && event.offsetY < Au.y + Au.h){
         console.log('clicked Au');
         displayInfo(elementsObj[79]);
+
     }
-        if (event.clientX > Hg.x && event.clientX < Hg.x + Hg.w && event.clientY > Hg.y && event.clientY < Hg.y + Hg.h){
+        if (event.offsetX > Hg.x && event.offsetX < Hg.x + Hg.w && event.offsetY > Hg.y && event.offsetY < Hg.y + Hg.h){
         console.log('clicked Hg');
         displayInfo(elementsObj[80]);
     }
-        if (event.clientX > Tl.x && event.clientX < Tl.x + Tl.w && event.clientY > Tl.y && event.clientY < Tl.y + Tl.h){
+        if (event.offsetX > Tl.x && event.offsetX < Tl.x + Tl.w && event.offsetY > Tl.y && event.offsetY < Tl.y + Tl.h){
         console.log('clicked Tl');
         displayInfo(elementsObj[81]);
+
     }
-        if (event.clientX > Pb.x && event.clientX < Pb.x + Pb.w && event.clientY > Pb.y && event.clientY < Pb.y + Pb.h){
+        if (event.offsetX > Pb.x && event.offsetX < Pb.x + Pb.w && event.offsetY > Pb.y && event.offsetY < Pb.y + Pb.h){
         console.log('clicked Pb');
         displayInfo(elementsObj[82]);
+
     }
-        if (event.clientX > Bi.x && event.clientX < Bi.x + Bi.w && event.clientY > Bi.y && event.clientY < Bi.y + Bi.h){
+        if (event.offsetX > Bi.x && event.offsetX < Bi.x + Bi.w && event.offsetY > Bi.y && event.offsetY < Bi.y + Bi.h){
         console.log('clicked Bi');
         displayInfo(elementsObj[83]);
+
     }
-        if (event.clientX > Po.x && event.clientX < Po.x + Po.w && event.clientY > Po.y && event.clientY < Po.y + Po.h){
+        if (event.offsetX > Po.x && event.offsetX < Po.x + Po.w && event.offsetY > Po.y && event.offsetY < Po.y + Po.h){
         console.log('clicked Po');
         displayInfo(elementsObj[84]);
+
     }
-        if (event.clientX > At.x && event.clientX < At.x + At.w && event.clientY > At.y && event.clientY < At.y + At.h){
+        if (event.offsetX > At.x && event.offsetX < At.x + At.w && event.offsetY > At.y && event.offsetY < At.y + At.h){
         console.log('clicked At');
         displayInfo(elementsObj[85]);
     }
-        if (event.clientX > Rn.x && event.clientX < Rn.x + Rn.w && event.clientY > Rn.y && event.clientY < Rn.y + Rn.h){
+        if (event.offsetX > Rn.x && event.offsetX < Rn.x + Rn.w && event.offsetY > Rn.y && event.offsetY < Rn.y + Rn.h){
         console.log('clicked Rn');
         displayInfo(elementsObj[86]);
+
     }
+
     //row 7
-        if (event.clientX > Fr.x && event.clientX < Fr.x + Fr.w && event.clientY > Fr.y && event.clientY < Fr.y + Fr.h){
+        if (event.offsetX > Fr.x && event.offsetX < Fr.x + Fr.w && event.offsetY > Fr.y && event.offsetY < Fr.y + Fr.h){
         console.log('clicked Fr');
         displayInfo(elementsObj[87]);
-
     }
-        if (event.clientX > Ra.x && event.clientX < Ra.x + Ra.w && event.clientY > Ra.y && event.clientY < Ra.y + Ra.h){
+        if (event.offsetX > Ra.x && event.offsetX < Ra.x + Ra.w && event.offsetY > Ra.y && event.offsetY < Ra.y + Ra.h){
         console.log('clicked Ra');
         displayInfo(elementsObj[88]);
-
     }
-        if (event.clientX > Ac.x && event.clientX < Ac.x + Ac.w && event.clientY > Ac.y && event.clientY < Ac.y + Ac.h){
+        if (event.offsetX > Ac.x && event.offsetX < Ac.x + Ac.w && event.offsetY > Ac.y && event.offsetY < Ac.y + Ac.h){
         console.log('clicked Ac');
         displayInfo(elementsObj[89]);
 
     }
-        if (event.clientX > Rf.x && event.clientX < Rf.x + Rf.w && event.clientY > Rf.y && event.clientY < Rf.y + Rf.h){
+        if (event.offsetX > Rf.x && event.offsetX < Rf.x + Rf.w && event.offsetY > Rf.y && event.offsetY < Rf.y + Rf.h){
         console.log('clicked Rf');
         displayInfo(elementsObj[104]);
-
     }
-        if (event.clientX > Db.x && event.clientX < Db.x + Db.w && event.clientY > Db.y && event.clientY < Db.y + Db.h){
+        if (event.offsetX > Db.x && event.offsetX < Db.x + Db.w && event.offsetY > Db.y && event.offsetY < Db.y + Db.h){
         console.log('clicked Db');
         displayInfo(elementsObj[105]);
+
     }
-        if (event.clientX > Sg.x && event.clientX < Sg.x + Sg.w && event.clientY > Sg.y && event.clientY < Sg.y + Sg.h){
-        console.log('clicked Sg');  
+        if (event.offsetX > Sg.x && event.offsetX < Sg.x + Sg.w && event.offsetY > Sg.y && event.offsetY < Sg.y + Sg.h){
+        console.log('clicked Sg');
         displayInfo(elementsObj[106]);
 
     }
-        if (event.clientX > Bh.x && event.clientX < Bh.x + Bh.w && event.clientY > Bh.y && event.clientY < Bh.y + Bh.h){
+        if (event.offsetX > Bh.x && event.offsetX < Bh.x + Bh.w && event.offsetY > Bh.y && event.offsetY < Bh.y + Bh.h){
         console.log('clicked Bh');
         displayInfo(elementsObj[107]);
 
     }
-        if (event.clientX > Hs.x && event.clientX < Hs.x + Hs.w && event.clientY > Hs.y && event.clientY < Hs.y + Hs.h){
+        if (event.offsetX > Hs.x && event.offsetX < Hs.x + Hs.w && event.offsetY > Hs.y && event.offsetY < Hs.y + Hs.h){
         console.log('clicked Hs');
         displayInfo(elementsObj[108]);
+
     }
-        if (event.clientX > Mt.x && event.clientX < Mt.x + Mt.w && event.clientY > Mt.y && event.clientY < Mt.y + Mt.h){
+        if (event.offsetX > Mt.x && event.offsetX < Mt.x + Mt.w && event.offsetY > Mt.y && event.offsetY < Mt.y + Mt.h){
         console.log('clicked Mt');
         displayInfo(elementsObj[109]);
 
     }
-        if (event.clientX > Ds.x && event.clientX < Ds.x + Ds.w && event.clientY > Ds.y && event.clientY < Ds.y + Ds.h){
+        if (event.offsetX > Ds.x && event.offsetX < Ds.x + Ds.w && event.offsetY > Ds.y && event.offsetY < Ds.y + Ds.h){
         console.log('clicked Ds');
         displayInfo(elementsObj[110]);
+
     }
-        if (event.clientX > Rg.x && event.clientX < Rg.x + Rg.w && event.clientY > Rg.y && event.clientY < Rg.y + Rg.h){
+        if (event.offsetX > Rg.x && event.offsetX < Rg.x + Rg.w && event.offsetY > Rg.y && event.offsetY < Rg.y + Rg.h){
         console.log('clicked Rg');
         displayInfo(elementsObj[111]);
+
     }
-        if (event.clientX > Cn.x && event.clientX < Cn.x + Cn.w && event.clientY > Cn.y && event.clientY < Cn.y + Cn.h){
+        if (event.offsetX > Cn.x && event.offsetX < Cn.x + Cn.w && event.offsetY > Cn.y && event.offsetY < Cn.y + Cn.h){
         console.log('clicked Cn');
         displayInfo(elementsObj[112]);
+
     }
-        if (event.clientX > Nh.x && event.clientX < Nh.x + Nh.w && event.clientY > Nh.y && event.clientY < Nh.y + Nh.h){
+        if (event.offsetX > Nh.x && event.offsetX < Nh.x + Nh.w && event.offsetY > Nh.y && event.offsetY < Nh.y + Nh.h){
         console.log('clicked Nh');
         displayInfo(elementsObj[113]);
+
     }
-        if (event.clientX > Fl.x && event.clientX < Fl.x + Fl.w && event.clientY > Fl.y && event.clientY < Fl.y + Fl.h){
+        if (event.offsetX > Fl.x && event.offsetX < Fl.x + Fl.w && event.offsetY > Fl.y && event.offsetY < Fl.y + Fl.h){
         console.log('clicked Fl');
         displayInfo(elementsObj[114]);
+
     }
-        if (event.clientX > Mc.x && event.clientX < Mc.x + Mc.w && event.clientY > Mc.y && event.clientY < Mc.y + Mc.h){
+        if (event.offsetX > Mc.x && event.offsetX < Mc.x + Mc.w && event.offsetY > Mc.y && event.offsetY < Mc.y + Mc.h){
         console.log('clicked Mc');
         displayInfo(elementsObj[115]);
+
     }
-        if (event.clientX > Lv.x && event.clientX < Lv.x + Lv.w && event.clientY > Lv.y && event.clientY < Lv.y + Lv.h){
+        if (event.offsetX > Lv.x && event.offsetX < Lv.x + Lv.w && event.offsetY > Lv.y && event.offsetY < Lv.y + Lv.h){
         console.log('clicked Lv');
         displayInfo(elementsObj[116]);
     }
-        if (event.clientX > Ts.x && event.clientX < Ts.x + Ts.w && event.clientY > Ts.y && event.clientY < Ts.y + Ts.h){
+        if (event.offsetX > Ts.x && event.offsetX < Ts.x + Ts.w && event.offsetY > Ts.y && event.offsetY < Ts.y + Ts.h){
         console.log('clicked Ts');
         displayInfo(elementsObj[117]);
+
     }
-        if (event.clientX > Og.x && event.clientX < Og.x + Og.w && event.clientY > Og.y && event.clientY < Og.y + Og.h){
+        if (event.offsetX > Og.x && event.offsetX < Og.x + Og.w && event.offsetY > Og.y && event.offsetY < Og.y + Og.h){
         console.log('clicked Og');
         displayInfo(elementsObj[118]);
+
     }
+
     //row 8
-        if (event.clientX > Ce.x && event.clientX < Ce.x + Ce.w && event.clientY > Ce.y && event.clientY < Ce.y + Ce.h){
+        if (event.offsetX > Ce.x && event.offsetX < Ce.x + Ce.w && event.offsetY > Ce.y && event.offsetY < Ce.y + Ce.h){
         console.log('clicked Ce');
         displayInfo(elementsObj[58]);
     }
-        if (event.clientX > Pr.x && event.clientX < Pr.x + Pr.w && event.clientY > Pr.y && event.clientY < Pr.y + Pr.h){
+        if (event.offsetX > Pr.x && event.offsetX < Pr.x + Pr.w && event.offsetY > Pr.y && event.offsetY < Pr.y + Pr.h){
         console.log('clicked Pr');
         displayInfo(elementsObj[59]);
     }
-        if (event.clientX > Nd.x && event.clientX < Nd.x + Nd.w && event.clientY > Nd.y && event.clientY < Nd.y + Nd.h){
+        if (event.offsetX > Nd.x && event.offsetX < Nd.x + Nd.w && event.offsetY > Nd.y && event.offsetY < Nd.y + Nd.h){
         console.log('clicked Nd');
         displayInfo(elementsObj[60]);
     }
-        if (event.clientX > Pm.x && event.clientX < Pm.x + Pm.w && event.clientY > Pm.y && event.clientY < Pm.y + Pm.h){
+        if (event.offsetX > Pm.x && event.offsetX < Pm.x + Pm.w && event.offsetY > Pm.y && event.offsetY < Pm.y + Pm.h){
         console.log('clicked Pm');
         displayInfo(elementsObj[61]);
+
     }
-        if (event.clientX > Sm.x && event.clientX < Sm.x + Sm.w && event.clientY > Sm.y && event.clientY < Sm.y + Sm.h){
+        if (event.offsetX > Sm.x && event.offsetX < Sm.x + Sm.w && event.offsetY > Sm.y && event.offsetY < Sm.y + Sm.h){
         console.log('clicked Sm');
         displayInfo(elementsObj[62]);
+
     }
-        if (event.clientX > Eu.x && event.clientX < Eu.x + Eu.w && event.clientY > Eu.y && event.clientY < Eu.y + Eu.h){
+        if (event.offsetX > Eu.x && event.offsetX < Eu.x + Eu.w && event.offsetY > Eu.y && event.offsetY < Eu.y + Eu.h){
         console.log('clicked Eu');
         displayInfo(elementsObj[63]);
+
     }
-        if (event.clientX > Gd.x && event.clientX < Gd.x + Gd.w && event.clientY > Gd.y && event.clientY < Gd.y + Gd.h){
+        if (event.offsetX > Gd.x && event.offsetX < Gd.x + Gd.w && event.offsetY > Gd.y && event.offsetY < Gd.y + Gd.h){
         console.log('clicked Gd');
         displayInfo(elementsObj[64]);
 
     }
-        if (event.clientX > Tb.x && event.clientX < Tb.x + Tb.w && event.clientY > Tb.y && event.clientY < Tb.y + Tb.h){
+        if (event.offsetX > Tb.x && event.offsetX < Tb.x + Tb.w && event.offsetY > Tb.y && event.offsetY < Tb.y + Tb.h){
         console.log('clicked Tb');
         displayInfo(elementsObj[65]);
 
     }
-        if (event.clientX > Dy.x && event.clientX < Dy.x + Dy.w && event.clientY > Dy.y && event.clientY < Dy.y + Dy.h){
+        if (event.offsetX > Dy.x && event.offsetX < Dy.x + Dy.w && event.offsetY > Dy.y && event.offsetY < Dy.y + Dy.h){
         console.log('clicked Dy');
         displayInfo(elementsObj[66]);
 
     }
-        if (event.clientX > Ho.x && event.clientX < Ho.x + Ho.w && event.clientY > Ho.y && event.clientY < Ho.y + Ho.h){
+        if (event.offsetX > Ho.x && event.offsetX < Ho.x + Ho.w && event.offsetY > Ho.y && event.offsetY < Ho.y + Ho.h){
         console.log('clicked Ho');
         displayInfo(elementsObj[67]);
 
     }
-        if (event.clientX > Er.x && event.clientX < Er.x + Er.w && event.clientY > Er.y && event.clientY < Er.y + Er.h){
+        if (event.offsetX > Er.x && event.offsetX < Er.x + Er.w && event.offsetY > Er.y && event.offsetY < Er.y + Er.h){
         console.log('clicked Er');
         displayInfo(elementsObj[68]);
 
     }
-        if (event.clientX > Tm.x && event.clientX < Tm.x + Tm.w && event.clientY > Tm.y && event.clientY < Tm.y + Tm.h){
+        if (event.offsetX > Tm.x && event.offsetX < Tm.x + Tm.w && event.offsetY > Tm.y && event.offsetY < Tm.y + Tm.h){
         console.log('clicked Tm');
         displayInfo(elementsObj[69]);
 
     }
-        if (event.clientX > Yb.x && event.clientX < Yb.x + Yb.w && event.clientY > Yb.y && event.clientY < Yb.y + Yb.h){
+        if (event.offsetX > Yb.x && event.offsetX < Yb.x + Yb.w && event.offsetY > Yb.y && event.offsetY < Yb.y + Yb.h){
         console.log('clicked Yb');
         displayInfo(elementsObj[70]);
 
     }
-        if (event.clientX > Lu.x && event.clientX < Lu.x + Lu.w && event.clientY > Lu.y && event.clientY < Lu.y + Lu.h){
+        if (event.offsetX > Lu.x && event.offsetX < Lu.x + Lu.w && event.offsetY > Lu.y && event.offsetY < Lu.y + Lu.h){
         console.log('clicked Lu');
         displayInfo(elementsObj[71]);
 
     }
+
     //row 9
-        if (event.clientX > Th.x && event.clientX < Th.x + Th.w && event.clientY > Th.y && event.clientY < Th.y + Th.h){
+        if (event.offsetX > Th.x && event.offsetX < Th.x + Th.w && event.offsetY > Th.y && event.offsetY < Th.y + Th.h){
         console.log('clicked Th');
         displayInfo(elementsObj[90]);
     }
-        if (event.clientX > Pa.x && event.clientX < Pa.x + Pa.w && event.clientY > Pa.y && event.clientY < Pa.y + Pa.h){
+        if (event.offsetX > Pa.x && event.offsetX < Pa.x + Pa.w && event.offsetY > Pa.y && event.offsetY < Pa.y + Pa.h){
         console.log('clicked Pa');
         displayInfo(elementsObj[91]);
     }
-        if (event.clientX > U.x && event.clientX < U.x + U.w && event.clientY > U.y && event.clientY < U.y + U.h){
+        if (event.offsetX > U.x && event.offsetX < U.x + U.w && event.offsetY > U.y && event.offsetY < U.y + U.h){
         console.log('clicked U');
         displayInfo(elementsObj[92]);
-
     }
-        if (event.clientX > Np.x && event.clientX < Np.x + Np.w && event.clientY > Np.y && event.clientY < Np.y + Np.h){
+        if (event.offsetX > Np.x && event.offsetX < Np.x + Np.w && event.offsetY > Np.y && event.offsetY < Np.y + Np.h){
         console.log('clicked Np');
         displayInfo(elementsObj[93]);
-
     }
-        if (event.clientX > Pu.x && event.clientX < Pu.x + Pu.w && event.clientY > Pu.y && event.clientY < Pu.y + Pu.h){
+        if (event.offsetX > Pu.x && event.offsetX < Pu.x + Pu.w && event.offsetY > Pu.y && event.offsetY < Pu.y + Pu.h){
         console.log('clicked Pu');
         displayInfo(elementsObj[94]);
     }   
-        if (event.clientX > Am.x && event.clientX < Am.x + Am.w && event.clientY > Am.y && event.clientY < Am.y + Am.h){
+        if (event.offsetX > Am.x && event.offsetX < Am.x + Am.w && event.offsetY > Am.y && event.offsetY < Am.y + Am.h){
         console.log('clicked Am');
         displayInfo(elementsObj[95]);
     }
-        if (event.clientX > Cm.x && event.clientX < Cm.x + Cm.w && event.clientY > Cm.y && event.clientY < Cm.y + Cm.h){
+        if (event.offsetX > Cm.x && event.offsetX < Cm.x + Cm.w && event.offsetY > Cm.y && event.offsetY < Cm.y + Cm.h){
         console.log('clicked Cm');
         displayInfo(elementsObj[96]);
-
     }
-        if (event.clientX > Bk.x && event.clientX < Bk.x + Bk.w && event.clientY > Bk.y && event.clientY < Bk.y + Bk.h){
+        if (event.offsetX > Bk.x && event.offsetX < Bk.x + Bk.w && event.offsetY > Bk.y && event.offsetY < Bk.y + Bk.h){
         console.log('clicked Bk');
         displayInfo(elementsObj[97]);
-
     }
-        if (event.clientX > Cf.x && event.clientX < Cf.x + Cf.w && event.clientY > Cf.y && event.clientY < Cf.y + Cf.h){
+        if (event.offsetX > Cf.x && event.offsetX < Cf.x + Cf.w && event.offsetY > Cf.y && event.offsetY < Cf.y + Cf.h){
         console.log('clicked Cf');
         displayInfo(elementsObj[98]);
-
     }
-        if (event.clientX > Es.x && event.clientX < Es.x + Es.w && event.clientY > Es.y && event.clientY < Es.y + Es.h){
+        if (event.offsetX > Es.x && event.offsetX < Es.x + Es.w && event.offsetY > Es.y && event.offsetY < Es.y + Es.h){
         console.log('clicked Es');
         displayInfo(elementsObj[99]);
-
     }
-        if (event.clientX > Fm.x && event.clientX < Fm.x + Fm.w && event.clientY > Fm.y && event.clientY < Fm.y + Fm.h){
+        if (event.offsetX > Fm.x && event.offsetX < Fm.x + Fm.w && event.offsetY > Fm.y && event.offsetY < Fm.y + Fm.h){
         console.log('clicked Fm');
         displayInfo(elementsObj[100]);
-
     }
-        if (event.clientX > Md.x && event.clientX < Md.x + Md.w && event.clientY > Md.y && event.clientY < Md.y + Md.h){
+        if (event.offsetX > Md.x && event.offsetX < Md.x + Md.w && event.offsetY > Md.y && event.offsetY < Md.y + Md.h){
         console.log('clicked Md');
         displayInfo(elementsObj[101]);
-
     }
-        if (event.clientX > No.x && event.clientX < No.x + No.w && event.clientY > No.y && event.clientY < No.y + No.h){
+        if (event.offsetX > No.x && event.offsetX < No.x + No.w && event.offsetY > No.y && event.offsetY < No.y + No.h){
         console.log('clicked No');
         displayInfo(elementsObj[102]);
-
     }
-        if (event.clientX > Lr.x && event.clientX < Lr.x + Lr.w && event.clientY > Lr.y && event.clientY < Lr.y + Lr.h){
+        if (event.offsetX > Lr.x && event.offsetX < Lr.x + Lr.w && event.offsetY > Lr.y && event.offsetY < Lr.y + Lr.h){
         console.log('clicked Lr');
         displayInfo(elementsObj[103]);
-
     }
 
-    console.log(event.clientX, event.clientY);
 });
